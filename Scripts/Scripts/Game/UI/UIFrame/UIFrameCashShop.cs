@@ -1,0 +1,15 @@
+﻿public class UIFrameCashShop : ZUIFrameBase
+{
+
+
+
+   
+}
+
+
+
+
+
+
+
+

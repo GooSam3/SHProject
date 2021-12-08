@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01ab63b717e389499dbc6b244e47816, type: 3}
+  m_Name: ZGimmickStarterData_Fire
+  m_EditorClassIdentifier: 
+  mAuthUrl_DEV: http://10.95.162.57:81/icarus/
+  mAuthUrl_QA: http://3.34.251.70:81/icarus/
+  mAuthUrl_LIVE: http://3.34.251.70:81/icarus/
+  ReadyManagers: 1
+  UsableCheat: 1
+  CharacterTableId: 100000
+  ChangeTableId: 0

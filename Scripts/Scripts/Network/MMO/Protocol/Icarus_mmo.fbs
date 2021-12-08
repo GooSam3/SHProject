@@ -1,0 +1,974 @@
+
+include "Icarus.fbs";
+
+namespace MmoNet;
+
+enum Version: uint { Num = 1778094681 }
+
+enum MSG: int 
+{
+	None							= 0,        // 없음
+	JoinField					    = 1,        // 필드 입장
+	InMapMsg						= 2,        // 필드 내 메시지
+	GetServerTime			        = 3,        // 서버 시간 요청
+	MoveServer						= 4,		// 서버 이동 요청(DB저장)
+	LogOut							= 5,		// 로그아웃
+	TestBotJoinReq					= 6,		// 봇조인 요청
+}
+
+//MMO간 Redis Pub/Sub을 위한 프로토콜
+enum MmoInteractMsg: int
+{
+	None				= 0,        // 없음
+	DupLoginFromOther   = 1,		// 다른MMO에서 중복로그인함
+}
+
+/// C2S 클라이언트 가 서버에 전송
+/// S2C 서버가 클라이언트에 전송
+/// CS  클라가 보내고 서버로 부터 그대로 받는 경우. 
+union InMapMsgUnion 
+{
+ 
+  ///서버에서 보내는 에러 메세지
+  S2C_Error,
+ 
+  ///C=>S
+  ReqLoadMapOK,
+
+  ///S=>C ReqLoadMapOK 받은후 서버가 해당클라이언트에 전송..
+  ResLoadMapOK,
+
+  CS_MapChat,
+  S2C_AddCharInfo,
+  S2C_AddMonsterInfo,
+  S2C_AddNPCInfo,
+  S2C_AddGatherObj,
+  S2C_DelObject,
+
+  CS_MoveToDir,
+  CS_MoveToDest,	 
+  CS_MoveToCollision,
+  CS_MoveStop,
+  CS_Attack,
+
+  S2C_Damage,
+  //도트 데미지
+  S2C_DotDamage,
+
+  S2C_AbilityNfy,
+   //스킬어빌리티 변경시
+  S2C_SkillAbility,
+
+  S2C_ForceMove,
+
+  ///S2C_GameTick 서버와 틱동기화를위해서 사용하는 패킷..
+  S2C_GameTick,
+  S2C_ChangeMezState,
+  S2C_ChangeClass,
+  S2C_AddAbilAction,
+  S2C_DelAbilAction,
+  S2C_MoveMap,
+  
+  C2S_ReqObjInfo,
+
+
+  ///유적에서 스킬 사용시 데미지 계산요청을 요구 하는 패킷..
+  C2S_DamageReq,
+
+  ///드랍된 아이템 정보 패킷(드랍연출용)
+  S2C_DropItemInfos,
+
+
+  ///펫장착 해제 동기화..
+  S2C_ChangePet,
+  S2C_ChangeChange,
+
+  C2S_UseItem,
+
+  S2C_Cooltime,
+
+  //획득한 아이템 합산 정보 패킷
+  S2C_RemainItemInfos,
+
+  //경험치획득(레벨, 경험치 갱신)
+  S2C_LvExpTendencyUp,
+  S2C_LvExpDown,
+  S2C_TendencyDown,
+
+  //포션 쿨타임전송
+  S2C_Potion_CoolTime,
+
+  //클라이언트 이펙트 표시를 위한 패킷 현재는 텔레포트용으로만 쓰인다.
+  S2C_DisplayEffect,
+
+  //유적에서 몬스터 소환을 요청하는 패킷
+  C2S_MonsterSpawnReq,
+
+  //유저 완료시 서버에 완료를 서버에 전송..
+  C2S_MapClear,
+
+  //스킬 취소
+  CS_SkillCancle,
+
+  //슬롯에 탈것 등록
+  CS_EquipVehicle,
+
+  //탈것 탑승여부 
+  CS_RideVehicle,
+
+  //길드정보 변경시.
+  S2C_ChangeGuildInfo,
+  //선함수치 변경시(테이블 구간 넘어갈때만 Broadcast용)
+  S2C_ChangeTendency,
+
+  //채집시..
+  C2S_Gather,  
+  //채집시 캐스팅 시간.
+  S2C_Casting,
+
+  //좌표 스킬
+  CS_AttackToPos,
+  
+  //파티정보 Broadcast용
+  S2C_UpdatePartyInfo,
+  
+  //파티표적 설정
+  C2S_SetPartyTarget,
+
+  //스테이지 상태 전송..(초기입장시, 그리고 게임시작시 전송함)
+  S2C_StageState,
+
+  //투가장 시작시 전송
+  S2C_GameStart,
+
+  //투기장 점수정보 전송
+  S2C_GameScore,
+
+  //능력치미리보기.
+  CS_StatPreview,
+ 
+  //방정보
+  S2C_RoomInfo,
+
+  //인던클리어 여부(주신의탑)
+  S2C_InstanceFinish,
+
+  //펫스텟 요청
+  C2S_PetStatReq,
+
+  //펫스텟 응답
+  S2C_PetStat,
+
+  S2C_GodLandStatInfo,
+  
+  S2C_GodLandFinishInfo,
+  
+  // 보스 포인트 랭킹 유저 리스트
+  S2C_BossPointRankingList,
+  
+  // pk로 인한 획득, 손실 포인트
+  S2C_BossPointDeathPenalty,
+
+  S2C_ChangeTeam,
+
+  C2S_ReqBotSet,
+
+  S2C_ResBotSetInfo,
+
+  // 현재 유저가 획득중인 보스 포인트
+  S2C_UserBossPoint,
+}
+
+
+
+// 아이템 강화
+enum E_DisplayEffect : ushort {
+    Teleport = 0,
+    Level_Up = 1,
+}
+
+enum E_ForeceMoveMap_Reason:ushort
+{
+    Not_Buff = 0,         //버프가 없을 경우.
+    Close_Stage = 1,      //스테이지가 닫혔을 경우.
+}
+table ServerPos3
+{
+  x:float;
+  y:float;
+  z:float;
+}
+
+table Ability 
+{
+  type:ushort;
+  value:float;
+}
+
+table SkillAbility
+{
+    skilltid:uint;
+    abils:[Ability];
+}
+
+table CharInfo 
+{
+  char_id:ulong;
+  user_id:ulong;
+  name:string (required);
+  char_tid:uint;
+  level:uint;
+  mapid:uint;
+  ///초기 능력치 정보들..
+  abils:[Ability];
+  skillabils:[SkillAbility];
+}
+
+table InMapMsgBase
+{
+  msg :InMapMsgUnion;
+}
+
+// 장비
+table ItemEquipment {
+    item_id: ulong;				// 아이템 고유 id
+    item_tid: uint;				// 아이템 테이블 id
+    option: [uint];				// 아이템 옵션
+    sockets: [uint];			// 아이템 소켓 고유 id
+    slot_idx: ubyte;			// 장착 슬롯 idx
+    is_lock: ubyte;             // 락 여부
+    expire_dt: ulong;			// 아이템 만료시간
+    create_dt: ulong;
+}
+
+
+// 소비성 아이템
+table ItemStack {
+    item_id: ulong;				// 아이템 고유 id
+    item_tid: uint;				// 아이템 테이블 id
+    cnt: uint;					// 수량
+    is_lock: ubyte;             // 락 여부
+    create_dt: ulong;
+}
+
+// 계정 공유 소비성 아이템
+table AccountItemStack {
+    item_id: ulong;				// 아이템 고유 id
+    item_tid: uint;				// 아이템 테이블 id
+    cnt: ulong;					// 수량
+    is_lock: ubyte;             // 락 여부
+    create_dt: ulong;
+}
+
+// 룬 아이템 정보
+table Rune {
+    item_id: ulong;
+    item_tid: uint;
+    slot_idx: ubyte;
+    is_lock: ubyte;
+    equip_pet_tid: uint;
+    base_enchant_tid: uint;
+    first_opt_tid: uint;
+    opt_tid_list_1: [uint];
+    opt_tid_list_2: [uint];
+    opt_tid_list_3: [uint];
+    opt_tid_list_4: [uint];
+    create_dt: ulong;
+}
+
+// 보스전 랭커 정보
+table BossRankerData 
+{
+  char_id:ulong;	// 캐릭터id
+  point:float;		// 현재 보유 포인트량
+  server_idx:uint;	// 서버 인덱스
+}
+table CS_MapChat 
+{
+  objectid:uint;
+  chat:string;
+}
+
+table AbilActionInfo
+{
+	///ability_action table id;
+	abilaction_tid:uint;
+	expire_dt: ulong;			// 만료시간
+	not_consume: bool;
+}
+
+
+
+//필드안에서 발생하는 에러 메세지용
+table S2C_Error
+{
+	//에러 메세지 코드 (WebNet::Error 코드)
+	error_code:uint;
+
+	//에러를 발생한 메세지 타입 (예:CS_Attack,C2S_Useitem ... ...) 
+	msg_type:uint;
+}
+
+table S2C_AddCharInfo 
+{
+  objectid:uint;
+  name:string (required);
+  char_tid:uint; 
+  pos:ServerPos3 (required);
+  dir:float;
+  ///movespeed >0 일경우 이동 중이기 때문에 이동처리를 해줘야 함..
+  movespeed:float;
+  destPos:ServerPos3;
+
+  ///change_id에 값이 있을 경우 변신을 우선시.
+  change_id:uint;
+  cur_hp:float;
+  max_hp:float;
+  cur_mp:float;
+  max_mp:float;
+  mezstate:uint;
+  /// 성향치
+  tendency:int;
+
+  ///메인펫 tid
+  pettid:uint;
+  ///탈것 탑승상태 값이 있을 경우 탑승상태..
+  vehicletid:uint;
+
+  ///길드마크
+  guild_id:ulong;
+  guildmark_tid:uint;
+
+  ///서버아이디
+  serverid:uint;
+
+  ///캐릭터 DB고유아이디
+  char_id:ulong;
+
+  ///팀플래그
+  team:uint;
+  abilactions:[AbilActionInfo];
+}
+
+table S2C_AddMonsterInfo 
+{
+  objectid:uint;
+  monster_tid:uint;
+  pos:ServerPos3 (required);
+  dir:float;
+  movespeed:float;
+  ///destPos 좌표가 있을 경우 이동이기 때문에 이동처리를 해줘야 함..
+  destPos:[ServerPos3];
+  cur_hp:float;
+  max_hp:float;
+  cur_mp:float;
+  max_mp:float;
+  mezstate:uint;
+  //부모오프젝트 아이디(없으면 0)
+  parentid:uint;
+  
+   ///팀플래그
+  team:uint;
+  abilactions:[AbilActionInfo];
+}
+
+table S2C_AddNPCInfo 
+{
+  objectid:uint;
+  npc_tid:uint;
+  pos:ServerPos3 (required);
+  dir:float;
+  movespeed:float;
+  ///destPos 좌표가 있을 경우 이동이기 때문에 이동처리를 해줘야 함..
+  destPos:[ServerPos3];
+}
+
+table S2C_AddGatherObj
+{
+  objectid:uint;
+  gather_tid:uint;
+  pos:ServerPos3 (required);
+  dir:float;
+}
+
+table S2C_DelObject 
+{
+  objectid:[uint];
+}
+
+table CS_MoveToDir 
+{
+  objectid:uint;
+  pos:ServerPos3 (required);
+  ///이동방향(Y축 각도)
+  dir:float;
+  ///이동스피드
+  speed:float;
+  ///바라보는 방향
+  lookdir:float;
+}
+
+table CS_MoveToDest 
+{
+  objectid:uint;
+  ///현재 위치.
+  pos:ServerPos3 (required);
+  speed:float;
+
+  ///이동 좌표 노드 리스트
+  dest:[ServerPos3];
+}
+
+///이동시 일정 시간의 이동 경로를 미리 체크 해서 충돌일 경우.. 해당 패킷을 보내준다..
+table CS_MoveToCollision 
+{
+  objectid:uint;
+  ///현재 위치
+  pos:ServerPos3 (required);
+  speed:float;
+  lookdir:float;
+  ///충돌좌표..
+  dest:ServerPos3 (required);
+}
+
+table CS_MoveStop
+{
+   objectid:uint;
+  ///현재 위치
+  pos:ServerPos3 (required);
+  lookdir:float;
+}
+
+table CS_Attack 
+{
+  objectid:uint;
+  pos:ServerPos3 (required);
+  dir:float;
+  skillno:uint;
+  ///타켓 아이디
+  targetid:uint;
+  ///콤보 번호
+  combo:ubyte;
+  ///공속
+  attackspeed:float;
+  //캐스팅 스킬에만 값이 입력된다 다른 스킬은 0
+  endtime:uint; 
+}
+
+table CS_AttackToPos 
+{
+  objectid:uint;
+  pos:ServerPos3 (required);
+  dir:float;
+  skillno:uint;
+  ///타켓 죄표
+  targetpos:ServerPos3;
+  ///콤보 번호
+  combo:ubyte;
+  ///공속
+  attackspeed:float;
+  //캐스팅 스킬에만 값이 입력된다 다른 스킬은 0
+  endtime:uint; 
+}
+
+
+
+table C2S_ReqSkill
+{
+  objectid:uint;
+  pos:ServerPos3 (required);
+  dir:float;
+  skillno:uint;
+  ///타켓 아이디
+  targetid:uint;
+  ///공속
+  attackspeed:float;
+}
+
+
+table S2C_Damage 
+{
+  objectid:uint;
+  atkobjid:uint;
+  dmg:uint;
+  skillno:uint;
+  damagetype:ubyte;
+  ///데미지 적용후 최종 HP 0이거나 작으면 죽은 상태..
+  currhp:float;
+  ///경직 시간
+  stiffen_duration:float;
+}
+
+
+table S2C_AbilityNfy 
+{
+  objectid:uint;
+  abils:[Ability];
+}
+
+table S2C_SkillAbility
+{
+  objectid:uint;
+  skillabils:[SkillAbility];
+}
+
+table S2C_ForceMove 
+{
+  objectid:uint;
+  ///최종목적지
+  pos:ServerPos3 (required);
+  ///이동시간
+  duration:float;
+  ///바라보는 방향
+  dir:float;
+ ///PosMoveType
+  movetype:ubyte;
+}
+
+///서버에서 틱동기화를 위해서 보내주는 패킷.
+table S2C_GameTick
+{
+  ///서버의 현재 틱
+  tick:uint;
+
+  ///틱의 간격(예: 50ms 일경우 0.05)
+  inteval:float;
+}
+
+table S2C_ChangeMezState
+{
+	objectid:uint;
+	mezstate:uint;
+}
+
+table S2C_MoveMap 
+{
+  stagetid:uint;
+  reason:E_ForeceMoveMap_Reason;
+}
+
+
+table S2C_ChangeClass
+{
+  objectid:uint;
+  change_tid:uint;
+}
+
+//Objcect ID 캐릭터를 못찾을 경우 다시 요청하는 패킷
+table C2S_ReqObjInfo
+{
+  objectid:uint;
+}
+
+//스킬이나 아이템 사용으로 Ability Action이 추가될경우..
+table S2C_AddAbilAction
+{
+   objectid:uint;
+   abilactiontid:uint;
+   restsec:uint;
+   not_consume:bool;
+}
+
+//시간이나 특정 조건으로  Ability Action이 삭제 될경우.
+table S2C_DelAbilAction
+{
+   objectid:uint;
+   abilactiontid:uint;
+}
+
+table DropItem
+{
+  objectid:uint;
+  item_tid:uint;		// 아이템 테이블 id
+  cnt: ulong;			// 수량
+  break_item_tid:uint;	//분해한 아이템 테이블 id
+  sell_item_tid:uint; 	//판매한 아이템 테이블 id
+}
+
+table S2C_DropItemInfos
+{
+  pos:ServerPos3 (required);
+  items:[DropItem];
+}
+
+table S2C_RemainItemInfos
+{
+  account_stack: [AccountItemStack];
+  stack: [ItemStack];
+  equip: [ItemEquipment];
+  rune: [Rune];
+}
+
+table S2C_LvExpTendencyUp
+{
+  lv: uint;						// 레벨
+  last_lv: uint;                // 최고 달성 레벨
+  exp: ulong;					// 경험치
+  last_exp: ulong;              // 최고 달성 경험치
+  tendency: int;				// 성향치
+  IsMonsterKill: bool;			// 사냥경험치 유무
+}
+
+table S2C_LvExpDown
+{
+  lv: uint;						// 레벨
+  exp: ulong;					// 경험치
+}
+
+table S2C_TendencyDown
+{
+  tendency: int;				// 성향치
+}
+
+table S2C_ChangePet
+{
+  objectid:uint;
+  pet_tid:uint;// 펫 테이블 id 0 이면 펫을 해제한것.
+}
+
+table S2C_ChangeChange
+{
+  objectid:uint;
+  change_tid:uint;// 변신체 테이블 id 0 이면 변신체를 해제한것.
+}
+
+//우선은 포션만..
+//아이템쪽 갱신정보는 S2C_RemainItemInfos 패킷으로 전송됨..
+//이펙트 BroadCasting S2C_AddAbilAction 전송됨..
+
+table C2S_UseItem 
+{
+  objectid:uint;
+  item_tid:uint;//아이템 테이블 tid
+}
+
+//스킬 쿨타임
+table S2C_Cooltime
+{
+	skilltid:uint;
+	cooltime:float;
+}
+
+
+//유적맵에서 해당 패킷을 받았을 경우 능력치 기반으로 데미지만 계산해서 
+//클라이언트에 전송한다.
+table C2S_DamageReq
+{
+	//0 일경우는 유적 기믹으로 처리한다.
+	attackerid:uint;
+	targetid:uint;
+	skilltid:uint;
+	damage:uint; 
+}
+
+
+table C2S_MonsterSpawnReq
+{
+	monster_tid:uint;
+	pos:ServerPos3;
+	lookdir:float;
+}
+
+table C2S_MapClear
+{
+	stagetid:uint;
+}
+
+//포션 쿨타임 정보 전송..
+table  S2C_Potion_CoolTime
+{
+	item_tid:uint;   
+	cooltime:float;  
+}
+
+//캐스팅 스킬 취소..
+table CS_SkillCancle
+{
+	objectid:uint;
+}
+
+//슬롯에 탈것 등록
+table CS_EquipVehicle
+{
+	vehicletid:uint;
+}
+
+//탈것 상태변화
+table CS_RideVehicle
+{
+	objectid:uint;
+	/// 0 이면 탑승해제
+	vehicletid:uint;
+}
+
+
+//클라이언트 이펙트 표시용(텔레포트,레벨업 )
+table S2C_DisplayEffect
+{
+	objectid:uint;
+	//이펙트 타입...텔레포트,레벨업
+	effect_tid:uint;
+}
+
+table S2C_ChangeGuildInfo
+{
+	objectid:uint;
+
+	///가입된 길드마크  0일경우 가입된 길드 없음.
+	guild_id:ulong;
+	guildmark_tid:uint;
+}
+
+table C2S_Gather
+{
+	objectid:uint;
+	target:uint;
+}
+
+table S2C_Casting
+{
+	objectid:uint;
+	target:uint;
+	duration:float;
+}
+
+table S2C_DotDamage
+{
+	objectid:uint;
+	atkobjid:uint;
+    dmg:uint;
+
+/// 어빌리티엑션 TID
+    abilactid:uint;
+    currhp:float;  
+}
+
+//선함수치 변경시(테이블 구간 넘어갈때만 Broadcast용)
+table S2C_ChangeTendency
+{
+	objectid:uint;
+	tendency: int;		// 성향치
+}
+
+table PartyMemberInfo 
+{
+  objectid:uint;
+  char_id:ulong;
+  pos:ServerPos3 (required);
+  
+  cur_hp:float;
+  max_hp:float;
+  cur_mp:float;
+  max_mp:float;  
+}
+
+//파티정보 Broadcast용
+table S2C_UpdatePartyInfo
+{
+  partymembers:[PartyMemberInfo];
+  targetobj_id:uint;
+}
+
+//파티표적 설정
+table C2S_SetPartyTarget
+{
+  objectid:uint;
+}
+
+
+table S2C_StageState
+{
+	//0-ready,1-play; 
+	state:ubyte;
+	//play time (플레이 상태일때만 유효한 값)
+	remain_sec:uint;
+	//스테이지 만료시간 (해당시간 이후 스테이지 닫음)
+	expire_dt: ulong;	
+}
+
+table S2C_GameStart
+{
+	//Play전까지 카운트 다운.
+	countdown:ubyte;
+}
+
+
+table S2C_GameScore
+{
+	//0-이면 게임진행중, 1-게임종료
+	game_end:ubyte;
+	score:[int];
+}
+
+
+///능력치 미리보기 요청/결과
+table CS_StatPreview
+{
+	abils:[Ability];
+}
+
+table RoomUser
+{
+	char_id:ulong;
+	name:string (required);
+	team_no:ubyte;
+	team_order:ubyte;
+	greade:uint;
+	rank:uint;
+	score:uint;
+}
+
+table S2C_RoomInfo
+{
+	room_users:[RoomUser];
+}
+
+table S2C_InstanceFinish
+{
+	IsClear:bool;
+}
+
+table C2S_PetStatReq
+{
+	pet_tid:uint;
+	pet_lv:uint;
+	///룬 tid
+	runes:[uint];
+}
+
+table S2C_PetStat
+{
+	abils:[Ability];
+}
+
+
+table S2C_GodLandStatInfo
+{
+	ObjectID:uint;
+	Level:uint;
+	Attack:float;
+	MeleeDefence:float;
+	MagicDefence:float;
+}
+
+table S2C_GodLandFinishInfo
+{
+	IsWin:bool;
+	GodLandTid:uint;
+}
+
+// 보스 랭킹 리스트 전달
+table S2C_BossPointRankingList
+{
+	PointList:[BossRankerData];
+}
+
+// 보스전 pk로 인한 획득/손실 포인트
+table S2C_BossPointDeathPenalty
+{
+	IsGet:bool;		// true : 획득 / false : 손실
+	Point:float;	// 포인트
+}
+
+table S2C_ChangeTeam
+{
+  objectid:uint;
+  team:uint;
+}
+
+///봇 기본셋팅 요청
+table C2S_ReqBotSet
+{
+	dummy:uint;
+}
+
+table S2C_ResBotSetInfo
+{
+	classid:uint;
+	skills:[uint];
+}
+
+table S2C_UserBossPoint
+{
+	point:float;
+}table JoinFieldReq {
+  char_id:ulong;
+  user_id:ulong;
+  userid:string (required);
+  authkey:uint;
+  ///서버아이디
+  serverid:uint;
+  ///들어갈 방번호 0이면 고정 맵필드..
+  room_no:long;
+}
+
+table JoinFieldRes
+{
+  reJoinKey:long;
+  objectid:uint;
+  charInfo:CharInfo;
+  //E_PKAreaChangeType 값을 그대로 넘겨줌...
+  pk_type:byte; 
+
+}
+
+table InMapMsg
+{
+  tick:uint;
+  msgbase:InMapMsgBase;
+}
+
+table InMapMsgList 
+{
+  tick:uint;
+  inMapMsg:[InMapMsg];
+}
+
+
+table ReqLoadMapOK 
+{
+	tick:uint;
+}
+
+///S->C LoadMapOK 받으면 전송해주는 패킷
+table ResLoadMapOK
+{
+	tick:uint;
+}
+
+table MoveServerReq
+{
+	channel_no:ushort;
+}
+
+table MoveServerRes
+{
+	tick:uint;
+}
+
+table LogOutReq
+{
+	//접속종료 이유: 추후에 쓸예정...
+	reason:ubyte; 
+}
+
+table LogOutRes
+{
+	tick:uint;
+}
+
+table TestBotJoinReq
+{
+	charname:string (required);
+	stagetid:uint;
+}// [요청] 시간 동기화
+table GetServerTimeReq {
+    client_time: ulong;             // 클라이언트 시간
+    protocol_version: uint;         // 프로토콜 버전
+}
+
+// [응답] 시간 동기화
+table GetServerTimeRes {
+    server_ts_ms: ulong;            // 서버 시간 unix time 밀리세컨드
+    client_time: ulong;             // 클라이언트 시간
+}
