@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class SHUnitHero : SHUnitBase
 {
-
+	[SerializeField]
+	private uint UnitID = 0;
 	protected SHUnitRageComboCount m_pUnitRageComboCount = null;
-	//-------------------------------------------------------------------
+    //-------------------------------------------------------------------
+    protected override void OnUnityAwake()
+    {
+        base.OnUnityAwake();
+		SetUnitID(UnitID, "None");
+	}
+
 	protected override void OnUnitInitialize()
 	{
 		base.OnUnitInitialize();

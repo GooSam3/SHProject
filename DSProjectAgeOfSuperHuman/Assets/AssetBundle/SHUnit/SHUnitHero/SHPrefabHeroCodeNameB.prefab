@@ -88,27 +88,6 @@ MonoBehaviour:
     ExtraGold: 0
     ExtraEXP: 0
     ExtraItem: 0
-  UpgradeStat:
-    Attack: 0
-    Defence: 0
-    Stamina: 0
-    AttackPercent: 0
-    DefencePercent: 0
-    StaminaPercent: 0
-    AttackSkill: 0
-    DefenceSkill: 0
-    Critical: 0
-    CriticalAnti: 0
-    CriticalDamage: 0
-    CriticalDamageAnti: 0
-    Hit: 0
-    Dodge: 0
-    Block: 0
-    BlockAnti: 0
-    RecoverPerSecond: 0
-    ExtraGold: 0
-    ExtraEXP: 0
-    ExtraItem: 0
 --- !u!1 &1330377974125588938
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd97c2b553df0a144ac137bd53cf77a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitID: 102
 --- !u!1 &3843775491154442619
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +577,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 37c708c43774d2c42a01a82db30dc9db, type: 2}
+  - {fileID: 2100000, guid: 9ffe7fbf043837940934c71c248f29b5, type: 2}
   - {fileID: 2100000, guid: 37c708c43774d2c42a01a82db30dc9db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

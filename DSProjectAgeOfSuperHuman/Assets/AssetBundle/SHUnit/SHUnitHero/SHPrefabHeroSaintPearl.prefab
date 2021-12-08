@@ -610,6 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd97c2b553df0a144ac137bd53cf77a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitID: 103
 --- !u!1 &7127898412895716646
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,27 +948,6 @@ MonoBehaviour:
     HP: 0
     MaxHP: 0
   HeroStat:
-    Attack: 0
-    Defence: 0
-    Stamina: 0
-    AttackPercent: 0
-    DefencePercent: 0
-    StaminaPercent: 0
-    AttackSkill: 0
-    DefenceSkill: 0
-    Critical: 0
-    CriticalAnti: 0
-    CriticalDamage: 0
-    CriticalDamageAnti: 0
-    Hit: 0
-    Dodge: 0
-    Block: 0
-    BlockAnti: 0
-    RecoverPerSecond: 0
-    ExtraGold: 0
-    ExtraEXP: 0
-    ExtraItem: 0
-  UpgradeStat:
     Attack: 0
     Defence: 0
     Stamina: 0

@@ -2,3 +2,11 @@ Project_DDackzi_King/ProjectDK/.vs/
 Project_DDackzi_King/ProjectDK/Library/
 Project_DDackzi_King/ProjectDK/obj/
 Project_DDackzi_King/ProjectDK/Logs/
+DSProjectAgeOfSuperHuman/Library/
+DSProjectAgeOfSuperHuman/Temp/
+DSProjectAgeOfSuperHuman/Logs/
+*.vsconfig
+*.csproj
+*.sln
+*.suo
+DSProjectAgeOfSuperHuman/obj/
