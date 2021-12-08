@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BundleScriptData
+  m_EditorClassIdentifier: 
+  m_GroupName: BundleScriptData
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ca3145e3f22ad9f44bb4638f08bd837f
+  m_SerializeEntries:
+  - m_GUID: b0d8644ab2c615147a67a607b56afa4f
+    m_Address: SHPrefabScript
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1b9900b9045448a44a5132269a190c05
+    m_Address: SHTableStatHeroUpgrade
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9858127a986ac7948958f671d918e22d
+    m_Address: SHTableDescriptionEnemyNormal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 77432ab7afce1104bb19be76e69336da
+    m_Address: SHTableStage_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cc582d47177fd9d48a6dad6d4f3e3e1e
+    m_Address: SHTableDescriptionHero
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 28a80e01b428f3945a5a15ac6935148b
+    m_Address: SHScriptDataSkill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9e73923462b68d5468cdcc30a1d7a254
+    m_Address: SHTableStatEnemy_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5248d889a31ee5c468c3857fb8173122
+    m_Address: SHScriptDataBuff
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 806637c4f21e57d48bb1a12154c8916a
+    m_Address: SHTableGameConfig
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 393865607772a8a4793932f8f49867f5
+    m_Address: SHTableRewardPackage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 886cb722e81095b4895908e0a6b6b9b9
+    m_Address: SHTableRewardPackageGroup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f498968f82e2fab428acd89b94a7c651
+    m_Address: SHTableItem_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c293913e6334bd247bd5c602436f8363
+    m_Address: SHTableHeroLevel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 682aecf517832bb4d8c5f840dd753660
+    m_Address: SHTableDescriptionSkill
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1ee910b8427d76a4abf09f35b5acb2cc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: cc184434f41eff0438bd0c685f474be8, type: 2}
+    - {fileID: 11400000, guid: 5d7bfd43f01425c4c85f74d6fa87a8b2, type: 2}

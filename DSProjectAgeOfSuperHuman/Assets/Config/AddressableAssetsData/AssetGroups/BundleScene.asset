@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BundleScene
+  m_EditorClassIdentifier: 
+  m_GroupName: BundleScene
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1dbca6b9d7bd11147aa386cd079b692c
+  m_SerializeEntries:
+  - m_GUID: 8eb9fecbc27a4f44d93bb62ac90bae50
+    m_Address: SHSceneCombatCity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f5e872ea1cfd07b4080c5e4314214236
+    m_Address: SHSceneCombatHarbor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 27ed87e961170c04fbb49c7e59557c1c
+    m_Address: SHSceneLobby
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b88aa582c4a349e48841eec76c040a79
+    m_Address: SHSceneLogin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bfa45a4e90042554db63e0d2c277bc83
+    m_Address: SHSceneMainLoading
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8e9885db5be6c8044a29dd3acbf39e26
+    m_Address: SHSceneScenario
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: abd97e5bb073d9c408a514364192923e
+    m_Address: UIMasterRoot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1ee910b8427d76a4abf09f35b5acb2cc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1fbaab7d875263f44ac361e6151de2ef, type: 2}
+    - {fileID: 11400000, guid: 663a5035980049b418caec7c3427270b, type: 2}

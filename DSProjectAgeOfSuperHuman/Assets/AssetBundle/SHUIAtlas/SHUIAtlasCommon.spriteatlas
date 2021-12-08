@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SHUIAtlasCommon
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 65525434bec7a484982fd74c99bb40f2, type: 3}
+    totalSpriteSurfaceArea: 59687
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d36e6d51f7da1d54e9a93f3dc868fa57, type: 3}
+  - {fileID: 21300000, guid: 37792e73f5feab8498967301df2a2b20, type: 3}
+  - {fileID: 21300000, guid: 0fb4d8848fe28b245a1c0b06dcc0ad5d, type: 3}
+  - {fileID: 21300000, guid: 856565156c88fbb498b00f210024eeb1, type: 3}
+  - {fileID: 21300000, guid: e9320e06d8674b146a5eb9c72154530a, type: 3}
+  - {fileID: 21300000, guid: 6ed4d127a375e2f4e9867ce1558e89b9, type: 3}
+  - {fileID: 21300000, guid: c8e40e376a6a4d849ab30b61a1bc01f3, type: 3}
+  - {fileID: 21300000, guid: 5eac9348e83cbd14487ad2053357d1a7, type: 3}
+  - {fileID: 21300000, guid: 4a31d499008af1340952b252723f4e5f, type: 3}
+  - {fileID: 21300000, guid: ff1e5e1ab94be794bbd8577247d80cd9, type: 3}
+  - {fileID: 21300000, guid: eb4f404ae3297cc4b8bd1ee4a838379d, type: 3}
+  - {fileID: 21300000, guid: 1989c79ab539d5546b309f9d1fb4cf86, type: 3}
+  - {fileID: 21300000, guid: c6ab482ba19e07848aec50ddf3a7d8d2, type: 3}
+  - {fileID: 21300000, guid: 17a42dac0f1eecf4bb1adab5cde93e7e, type: 3}
+  - {fileID: 21300000, guid: b3c71abd85bbfda41b014e924735cd36, type: 3}
+  - {fileID: 21300000, guid: 4319e8fd03ae9064bb843461f1c01690, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UIImgPatternBottom2
+  - UIImgMarkLock
+  - UIImgGoldMini
+  - UIImgSeperator2
+  - UIImgReset
+  - UIImgMarkAttackPower
+  - UIImgBoardRed
+  - UIImgPatternBottom
+  - UIImgSlotHeroBack
+  - UIImgMarkPunch
+  - UIImgBoardYellow
+  - UIImgUpgrade
+  - UIImgInfomation
+  - UIImgFocusMark
+  - UIImgArrowRight
+  - UIImgSeperator
+  m_RenderDataMap: {}
+  m_Tag: SHUIAtlasCommon
+  m_IsVariant: 0

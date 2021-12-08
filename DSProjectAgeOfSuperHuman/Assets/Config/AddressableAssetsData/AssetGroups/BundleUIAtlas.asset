@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BundleUIAtlas
+  m_EditorClassIdentifier: 
+  m_GroupName: BundleUIAtlas
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 40736417714bbea4ba08486dcaa499cd
+  m_SerializeEntries:
+  - m_GUID: 62f50b989085f2d459e0123c8f577368
+    m_Address: SHUIAtlasFaceHero
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 019055211be139e49ad3ab32e3488c26
+    m_Address: SHUIAtlasCombat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2df91a3392cb8cf458862a160237af8a
+    m_Address: SHUIAtlasSkill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 390cfab34e504714887b5c5c89fea068
+    m_Address: SHUIAtlasButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 887e610c47a6d2147bb612ec0b87d276
+    m_Address: SHUIAtlasIcon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 22a7a604fb248a34c9f0ba96e70bc2d2
+    m_Address: SHUIAtlasLobby
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 08639badd91242f449cb5e663f583695
+    m_Address: SHUIAtlasDialog
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: dea7530402645f7478c1c88baf87ee9b
+    m_Address: SHUIAtlasMisc
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7526f8ed58e8d764ebb61c2cdbc3aa6c
+    m_Address: SHUIAtlasCommon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1ee910b8427d76a4abf09f35b5acb2cc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 80e4f595abe2393499bba836c81c0ebf, type: 2}
+    - {fileID: 11400000, guid: fc73ccd9958ad7e478ff419784950b86, type: 2}

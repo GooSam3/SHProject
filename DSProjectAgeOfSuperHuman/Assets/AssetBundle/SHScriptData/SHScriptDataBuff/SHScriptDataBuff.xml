@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (x64) (http://www.altova.com) by MESMERiZE (MSM) -->
+<RootBuffData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../SHExternalScriptData/SkillBuff/SHSheetBuff.xsd">
+	<BuffHero ToolTip="약점노출카운트">
+		<BuffData hBuffID="1000" ToolTip="스텍이 쌓이면 약점노출을 발동한다." BuffName="약점노출 준비" BuffIcon="None" EBuffUIType="BuffShow" EBuffType="None" iStackCount="1" fEventOverTime="0" bExclusive="false" bCountUp="true" bTimeReset="false" bPowerUp="false" bTimeOverUp="false">
+			<BuffEventBuffFrom>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionStackCount iStackCount="3"/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryUtility>
+						<BuffTaskBuffUse EBuffTaskTarget="BuffOwner" hBuffID="1001" fPower="1" fDuration="2"/>
+						<BuffTaskClose ToolTip="약점노출 걸고 종료"/>
+					</BuffTaskCategoryUtility>
+				</BuffTaskCategoryList>
+			</BuffEventBuffFrom>
+		</BuffData>
+		<BuffData hBuffID="1001" ToolTip="약점노출. 스킬데미지 들어오면 삭제" BuffName="약점노출" BuffIcon="None" EBuffUIType="BuffShow" EBuffType="None" iStackCount="1" fEventOverTime="0" bExclusive="true" bCountUp="false" bTimeReset="false" bPowerUp="false" bTimeOverUp="false">
+			<BuffEventStart>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryEffect>
+						<BuffTaskEffectNormal EUnitSocket="Head" EffectName="SHEffectWeakPoint" fDuration="1" fOffsetX="0" fOffsetY="2" fOffsetZ="0"/>
+					</BuffTaskCategoryEffect>
+					<BuffTaskCategoryStat>
+						<BuffTaskStatConst ESHStatType="SkillReducePercent" fConstValue="-2000"/>
+					</BuffTaskCategoryStat>
+				</BuffTaskCategoryList>
+			</BuffEventStart>
+			<BuffEventSkillFrom>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryUtility>
+						<BuffTaskClose/>
+					</BuffTaskCategoryUtility>
+				</BuffTaskCategoryList>
+			</BuffEventSkillFrom>
+		</BuffData>
+		<BuffData hBuffID="1100" ToolTip="임강 자연화버프" BuffName="자연화" BuffIcon="None" EBuffUIType="BuffShow" EBuffType="StatUp" iStackCount="1" fEventOverTime="0" bExclusive="true" bCountUp="false" bTimeReset="false" bPowerUp="false" bTimeOverUp="false">
+			<BuffEventStart>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryStat>
+						<BuffTaskStatPercent ESHStatType="AttackPower" fRateValue="10"/>
+						<BuffTaskStatPercent ESHStatType="DefensePower" fRateValue="10"/>
+						<BuffTaskStatPercent ESHStatType="CriticalDamageRate" fRateValue="10"/>
+						<BuffTaskStatPercent ESHStatType="CriticalDamageRateAnti" fRateValue="10"/>
+					</BuffTaskCategoryStat>
+					<BuffTaskCategoryEffect>
+						<BuffTaskEffectAttachCamera EffectName="SHEffectNaturalization" fDuration="0"/>
+					</BuffTaskCategoryEffect>
+				</BuffTaskCategoryList>
+			</BuffEventStart>
+		</BuffData>
+		<BuffData hBuffID="2000" ToolTip="넉백버프" BuffName="넉백" BuffIcon="None" EBuffUIType="BuffShow" EBuffType="CrowdControl" iStackCount="1" fEventOverTime="0" bExclusive="false" bCountUp="false" bTimeReset="false" bPowerUp="false" bTimeOverUp="true"/>
+		<BuffData hBuffID="6001" ToolTip="충격(베히모스출처) / 데미지 방어 -50%" BuffName="충격" BuffIcon="None" EBuffType="StatDown" EBuffUIType="BuffShow" iStackCount="1" fEventOverTime="0" bExclusive="false" bCountUp="false" bTimeReset="true" bPowerUp="false" bTimeOverUp="false">
+			<BuffEventStart>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryStat>
+						<BuffTaskStatConst ESHStatType="ReducePercent" fConstValue="-5000"/>
+					</BuffTaskCategoryStat>
+				</BuffTaskCategoryList>
+			</BuffEventStart>
+		</BuffData>
+		<BuffData hBuffID="2015" BuffName="섬광 분노" BuffIcon="None" ToolTip="세인트펄 스킬3 버프" EBuffType="StatUp" EBuffUIType="BuffShow" iStackCount="1" fEventOverTime="0" bExclusive="true" bCountUp="false" bTimeReset="false" bPowerUp="false" bTimeOverUp="false">
+			<BuffEventStart>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryHero>
+						<BuffTaskHeroChangeSkin AniGroupName="Upper" SkinName="skill_03"/>
+					</BuffTaskCategoryHero>
+					<BuffTaskCategoryStat>
+						<BuffTaskStatPercent ESHStatType="CriticalRate" fRateValue="5000"/>
+						<BuffTaskStatPercent ESHStatType="CriticalDamageRate" fRateValue="5000"/>
+					</BuffTaskCategoryStat>
+				</BuffTaskCategoryList>
+			</BuffEventStart>
+			<BuffEventEnd>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryHero>
+						<BuffTaskHeroChangeSkin AniGroupName="Upper" SkinName="default"/>
+					</BuffTaskCategoryHero>
+				</BuffTaskCategoryList>
+			</BuffEventEnd>
+		</BuffData>
+		<BuffData hBuffID="3013" BuffName="전투모드" BuffIcon="None" ToolTip="코드네임B 스킬3 버프" EBuffType="StatUp" EBuffUIType="BuffShow" iStackCount="1" fEventOverTime="0" bExclusive="true" bCountUp="false" bTimeReset="false" bPowerUp="false" bTimeOverUp="false">
+			<BuffEventStart>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryHero>
+						<BuffTaskHeroChangeSkin AniGroupName="Upper" SkinName="skill_03"/>
+					</BuffTaskCategoryHero>
+					<BuffTaskCategoryStat>
+						<BuffTaskStatPercent ESHStatType="CriticalRate" fRateValue="5000"/>
+						<BuffTaskStatPercent ESHStatType="CriticalDamageRate" fRateValue="5000"/>
+					</BuffTaskCategoryStat>
+				</BuffTaskCategoryList>
+			</BuffEventStart>
+			<BuffEventEnd>
+				<BuffTaskCategoryList>
+					<BuffTaskConditionList>
+						<BuffTaskConditionNone/>
+					</BuffTaskConditionList>
+					<BuffTaskCategoryHero>
+						<BuffTaskHeroChangeSkin AniGroupName="Upper" SkinName="default"/>
+					</BuffTaskCategoryHero>
+				</BuffTaskCategoryList>
+			</BuffEventEnd>
+		</BuffData>
+	</BuffHero>
+</RootBuffData>

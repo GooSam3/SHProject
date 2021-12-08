@@ -1,0 +1,19 @@
+﻿SkillID,SkillName,IconName,Description,ESkillDescriptionType,Arg1,Arg2,Arg3,Arg4
+1013,난타,UIImgSkillSlot_1013,각 타격당 <color=#ff0000>[[100]]%</color>피해를 주는 빠른 연타 공격 이후 <color=#ff0000>[[200]]%</color> 마무리 피해를 준다. 대상은 5초간 경직된다. ,Active,1,2,0,0
+1014,내려찍기,UIImgSkillSlot_1014,발에 향을 집중하여 <color=#ff0000>[[50]]%</color> 피해를 주면서 올려 찬다. 이 후 <color=#ff0000>[[100]]%</color> 피해를 주는 내려 찍기 공격을 한다.,Active,1,2,1.4,1.5
+1015,자연화,UIImgSkillSlot_1015,"자신의 향을 방출하여 10초간 공격력, 방어력, 크리티컬 확률, 크리티컬 피해를 각각 <color=#ff0000>[[20]]%</color> 증가 시킨다.",Active,0.1,0,1.4,1.5
+1016,분노난타,UIImgSkillSlot_1015,"자신의 향을 방출하여 10초간 공격력, 방어력, 크리티컬 확률, 크리티컬 피해를 각각 <color=#ff0000>[[20]]%</color> 증가 시킨다.",Active,0.1,0,1.4,1.5
+2013,섬광 일격,UIImgSkillSlot_2013,팔에 빛의 힘을 모아서 <color=#ff0000>[[100]]%</color>일격을 날린다. ,Active,1,2,1.4,1.5
+2014,섬광 회복,UIImgSkillSlot_2014,자신을 공격력의 <color=#ff0000>[[200]]%</color> 만큼 회복하고 동료를 <color=#ff0000>[[100]]%</color> 만큼 회복시킨다.,Active,2,1,1.4,1.5
+2015,섬광 강화,UIImgSkillSlot_2015,빛을 집중시켜 신체 능력을 극대화 시킨다. ,Normal,1,2,1.4,1.5
+2016,섬광 난타,UIImgSkillSlot_2015,빛을 집중시켜 신체 능력을 극대화 시킨다. ,Normal,1,2,1.4,1.5
+3011,케서레일 버스트샷,UIImgSkillSlot_3011,케서레일을 지근거리에서 연속 발사한다. ,Normal,1,2,1.4,1.5
+3012,바주퍼 저격,UIImgSkillSlot_3012,원거리에서 바주퍼를 머리에 조준하여 발사한다. 이 공격은 치명타 확률이 20%증가한다.,Active,1,2,1.4,1.5
+3013,공격모드 발동 ,UIImgSkillSlot_3013,케서레일 건틀릿의 에너지를 집중하여 공격력을 증가시킨다.,Active,1,2,1.4,1.5
+3014,케서레일 연속발사,UIImgSkillSlot_3013,케서레일 건틀릿의 에너지를 집중하여 공격력을 증가시킨다.,Active,1,2,1.4,1.5
+1025,공격이름,UIImgSkillSlot_1015,강력한 저격총으로 대상에게 <color=#ff0000>[[200]]%</color>피해를 준다,Active,1,2,1.4,1.5
+1031,공격이름,UIImgSkillSlot_1013,왼손 주먹으로 공격을 한다,Normal,1,2,1.4,1.5
+1032,공격이름,UIImgSkillSlot_1013,오른손 주먹으로 공격을 한다.,Normal,1,2,1.4,1.5
+1033,공격이름,UIImgSkillSlot_1013,적에게 강력한 빛의 펀치를 날려 <color=#ff0000>[[50]]%</color> 펀치 피해와 <color=#ff0000>[[100]]%</color>의 빛의 피해를 준다,Active,1,2,1.4,1.5
+1034,공격이름,UIImgSkillSlot_1014,자신의 회복력을 30초간 <color=#ff0000>[[500]]</color>씩 추가한다 ,Active,1,2,1.4,1.5
+1035,공격이름,UIImgSkillSlot_1015,자신의 피해량을 10초간 <color=#ff0000>[[50]]%</color>증가 시키고 체력 회복율을 <color=#ff0000>[[100]]</color>만큼 증가 시킨다.,Active,1,2,1.4,1.5

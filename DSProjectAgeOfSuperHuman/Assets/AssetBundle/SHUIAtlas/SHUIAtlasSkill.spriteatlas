@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SHUIAtlasSkill
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: da69f561c5fd94244b4d585088ceea2f, type: 3}
+    totalSpriteSurfaceArea: 154374
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6e0171c04b685454697b499026c2eeaf, type: 3}
+  - {fileID: 21300000, guid: dd390f513ec21764cb24996299ed68f9, type: 3}
+  - {fileID: 21300000, guid: d125ba61a7df41e4d829c91698d9a846, type: 3}
+  - {fileID: 21300000, guid: dad6df13a37fedc49bb0ab1b520c6c3d, type: 3}
+  - {fileID: 21300000, guid: d5db9435b55d0bb438984a86b7c09aab, type: 3}
+  - {fileID: 21300000, guid: 35ac8c09b9c795f4394a6e08425c7fc0, type: 3}
+  - {fileID: 21300000, guid: 937165e9763ac554c92d2c1843ba0995, type: 3}
+  - {fileID: 21300000, guid: 988410acbb4836c438a1b4e0eeb0db1d, type: 3}
+  - {fileID: 21300000, guid: 8f7552cca3210cb44901ee6be5be911a, type: 3}
+  - {fileID: 21300000, guid: 7ee02a9db157d3f4eb0eebf5905d88b8, type: 3}
+  - {fileID: 21300000, guid: adb3a89ecf3891248ab335376c0bc854, type: 3}
+  - {fileID: 21300000, guid: 6c6d1bee99c357049a091e1e4af2e347, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UIImgSkillIcon_LimGang_3
+  - UIImgSkillSlot_2015
+  - UIImgSkillSlot_3011
+  - UIImgSkillSlot_3013
+  - UIImgSkillIcon_LimGang_2
+  - UIImgSkillIcon_LimGang_1
+  - UIImgSkillSlot_1014
+  - UIImgSkillSlot_2013
+  - UIImgSkillSlot_1013
+  - UIImgSkillSlot_3012
+  - UIImgSkillSlot_2014
+  - UIImgSkillSlot_1015
+  m_RenderDataMap: {}
+  m_Tag: SHUIAtlasSkill
+  m_IsVariant: 0

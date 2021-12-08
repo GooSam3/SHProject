@@ -1,0 +1,83 @@
+
+skeleton.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/circle
+  rotate: false
+  xy: 366, 300
+  size: 30, 30
+  orig: 32, 32
+  offset: 1, 1
+  index: -1
+images/circle_2
+  rotate: false
+  xy: 387, 332
+  size: 30, 30
+  orig: 32, 32
+  offset: 1, 1
+  index: -1
+images/fanfare
+  rotate: false
+  xy: 132, 302
+  size: 118, 115
+  orig: 123, 123
+  offset: 3, 1
+  index: -1
+images/light_01
+  rotate: false
+  xy: 387, 364
+  size: 19, 43
+  orig: 21, 44
+  offset: 1, 0
+  index: -1
+images/light_02
+  rotate: false
+  xy: 398, 304
+  size: 10, 26
+  orig: 11, 26
+  offset: 1, 0
+  index: -1
+images/rainbow 
+  rotate: true
+  xy: 252, 311
+  size: 10, 45
+  orig: 12, 48
+  offset: 1, 2
+  index: -1
+images/reflect_01
+  rotate: true
+  xy: 333, 300
+  size: 30, 31
+  orig: 43, 32
+  offset: 13, 0
+  index: -1
+images/reflect_02
+  rotate: true
+  xy: 252, 323
+  size: 94, 79
+  orig: 95, 80
+  offset: 1, 0
+  index: -1
+images/reflect_03
+  rotate: false
+  xy: 2, 306
+  size: 128, 111
+  orig: 128, 112
+  offset: 0, 1
+  index: -1
+images/reflect_04
+  rotate: true
+  xy: 333, 332
+  size: 85, 52
+  orig: 86, 52
+  offset: 0, 0
+  index: -1
+images/reflect_05
+  rotate: false
+  xy: 299, 303
+  size: 23, 18
+  orig: 23, 19
+  offset: 0, 1
+  index: -1

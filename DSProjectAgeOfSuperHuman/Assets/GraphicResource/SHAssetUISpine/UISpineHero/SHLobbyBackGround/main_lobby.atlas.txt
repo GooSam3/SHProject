@@ -1,0 +1,152 @@
+
+main_lobby.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_smog_1
+  rotate: false
+  xy: 2, 295
+  size: 707, 464
+  orig: 712, 471
+  offset: 3, 5
+  index: -1
+R_smog_1
+  rotate: false
+  xy: 2, 16
+  size: 795, 257
+  orig: 891, 264
+  offset: 1, 5
+  index: -1
+R_smog_2
+  rotate: true
+  xy: 1308, 761
+  size: 779, 513
+  orig: 797, 520
+  offset: 5, 6
+  index: -1
+bg
+  rotate: false
+  xy: 2, 761
+  size: 1304, 1242
+  orig: 1304, 1242
+  offset: 0, 0
+  index: -1
+dark_dust_1
+  rotate: true
+  xy: 1670, 1680
+  size: 323, 309
+  orig: 327, 311
+  offset: 1, 1
+  index: -1
+dark_dust_2
+  rotate: false
+  xy: 1713, 500
+  size: 243, 259
+  orig: 246, 261
+  offset: 2, 1
+  index: -1
+dark_dust_3
+  rotate: true
+  xy: 1268, 450
+  size: 309, 443
+  orig: 313, 445
+  offset: 2, 1
+  index: -1
+lens_flare
+  rotate: false
+  xy: 799, 68
+  size: 702, 205
+  orig: 712, 212
+  offset: 5, 3
+  index: -1
+light
+  rotate: false
+  xy: 1503, 119
+  size: 389, 329
+  orig: 391, 331
+  offset: 1, 1
+  index: -1
+light_dust_1
+  rotate: false
+  xy: 1308, 1558
+  size: 360, 445
+  orig: 363, 447
+  offset: 1, 1
+  index: -1
+light_dust_2
+  rotate: true
+  xy: 711, 275
+  size: 484, 555
+  orig: 487, 558
+  offset: 1, 1
+  index: -1
+water_light_1
+  rotate: false
+  xy: 1823, 1505
+  size: 110, 80
+  orig: 132, 90
+  offset: 11, 5
+  index: -1
+water_light_2
+  rotate: false
+  xy: 1670, 1587
+  size: 193, 91
+  orig: 214, 101
+  offset: 9, 5
+  index: -1
+water_light_3
+  rotate: false
+  xy: 1823, 1425
+  size: 94, 78
+  orig: 118, 89
+  offset: 12, 6
+  index: -1
+water_light_4
+  rotate: false
+  xy: 1503, 2
+  size: 390, 115
+  orig: 413, 125
+  offset: 13, 5
+  index: -1
+water_screen_1
+  rotate: true
+  xy: 1895, 52
+  size: 446, 87
+  orig: 460, 91
+  offset: 2, 2
+  index: -1
+water_screen_2
+  rotate: false
+  xy: 799, 12
+  size: 496, 54
+  orig: 499, 58
+  offset: 1, 2
+  index: -1
+water_screen_3
+  rotate: true
+  xy: 1823, 761
+  size: 649, 79
+  orig: 669, 79
+  offset: 1, 0
+  index: -1
+
+main_lobby2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg_2
+  rotate: false
+  xy: 2, 299
+  size: 1304, 1242
+  orig: 1304, 1242
+  offset: 0, 0
+  index: -1
+light_dust_3
+  rotate: false
+  xy: 1308, 1308
+  size: 233, 233
+  orig: 235, 235
+  offset: 1, 1
+  index: -1

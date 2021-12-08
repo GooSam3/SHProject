@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SHUIAtlasCombat
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: e0d1b914d98e6264aa1114b57df398b1, type: 3}
+    totalSpriteSurfaceArea: 1182530
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c15059006b05577479ff08366477ea1a, type: 3}
+  - {fileID: 21300000, guid: 4dcab0b0c6a2216479970165e7fb18cb, type: 3}
+  - {fileID: 21300000, guid: aeacd0d009b914046906337837a03bc5, type: 3}
+  - {fileID: 21300000, guid: 71117a8110c37ad4a8e20a45a185d014, type: 3}
+  - {fileID: 21300000, guid: f1a18b22a85fc8a438d6388194744e42, type: 3}
+  - {fileID: 21300000, guid: 4bacf4b29f9c77d4c903df431e8926aa, type: 3}
+  - {fileID: 21300000, guid: 9613dd03ed8bf6642bcf4e81ba7fa760, type: 3}
+  - {fileID: 21300000, guid: 805c47e4239b9db49b69660eb7771d69, type: 3}
+  - {fileID: 21300000, guid: 48d47de49afd6b948a0a8708dd5902f3, type: 3}
+  - {fileID: 21300000, guid: 4730eb354ff95074b82cca0b87e036bd, type: 3}
+  - {fileID: 21300000, guid: 1f5e19a5c3c34894bab92751b1690c93, type: 3}
+  - {fileID: 21300000, guid: 9d629d6670e663648b450e6199f0df1f, type: 3}
+  - {fileID: 21300000, guid: d9758d966ed718140ab4837ce8200ef2, type: 3}
+  - {fileID: 21300000, guid: 62bb3d27d00ad8e41b8a8a00058ba856, type: 3}
+  - {fileID: 21300000, guid: de907558ffdac7b47a21cf9674526a37, type: 3}
+  - {fileID: 21300000, guid: cb2ddfb880bb8fe44929f6b9f5b6085a, type: 3}
+  - {fileID: 21300000, guid: b7de17591b796a241a07c718e8b77e28, type: 3}
+  - {fileID: 21300000, guid: baaaf2696dd1ccd4d9000d54637ff99d, type: 3}
+  - {fileID: 21300000, guid: 4b003c2a4368f5f4896fb60976876087, type: 3}
+  - {fileID: 21300000, guid: 30b72b3aaeab0c141b10136f67e27b16, type: 3}
+  - {fileID: 21300000, guid: 05e1f55af9b32c84da59aa89587eeb3f, type: 3}
+  - {fileID: 21300000, guid: 0b4dfb5bd5e0b5540b8d7e99be89b120, type: 3}
+  - {fileID: 21300000, guid: 808ce56b1f653d44abf96fca66705118, type: 3}
+  - {fileID: 21300000, guid: 2df21d7b99421ac41a7a4fb125c7fcb1, type: 3}
+  - {fileID: 21300000, guid: a6f8b38bceecbcb4a8beffc1c29758e0, type: 3}
+  - {fileID: 21300000, guid: e3000fbb0468cab4db4fd477a217c0c5, type: 3}
+  - {fileID: 21300000, guid: 1f6135cbdd15bb54691336b0d53d24af, type: 3}
+  - {fileID: 21300000, guid: 751c694cd6bdc3b4aa2d62e17866e3bc, type: 3}
+  - {fileID: 21300000, guid: 0fe92e7d4cbf1914081bac6807b422ed, type: 3}
+  - {fileID: 21300000, guid: d12eb43ea07b3d14f8dc52958917af5b, type: 3}
+  - {fileID: 21300000, guid: 617ec17e84e36ad4499efa2b0f852030, type: 3}
+  - {fileID: 21300000, guid: bef324bed1fd9704d93c3501736d51f4, type: 3}
+  - {fileID: 21300000, guid: 7dc4540fa5bf8af47825fc35f712e12b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UIImgGaugeEnemyBack
+  - UIImgTagHeroPanelLeft_1
+  - UIImgGaugeFeverBack
+  - UIImgSlotTagSub
+  - UIImgTagHeroPanelLeft_2
+  - UIImgSkillSlotPunch
+  - UIImgTagHeroPanel_1
+  - UIImgGaugeThumbBroken
+  - UIImgGaugeTagFill
+  - UIImgGaugeTagBack
+  - UIImgTagMark
+  - UIImgTagReady
+  - UIImgTagHeroPanelPattern
+  - UIImgSkillSlotCooltime3
+  - UIImgStageName
+  - UIImgTagHeroPanelRight_2
+  - UIImgGaugeEnemyFill
+  - UIImgGaugeHeroHPFill
+  - UIImgSkillSlotNormal
+  - UIImgGaugeHeroHPBoard
+  - UIImgGaugeHeartHP
+  - UIImgEnemyGaugeDecoration
+  - UIImgSkillSlotCooltime1
+  - UIImgSkillSlot3
+  - UIImgBoardGold
+  - UIImgTagHeroPanel_2
+  - UIImgSkillSlot2
+  - UIImgGaugeFeverFill
+  - UIImgCritical
+  - UIImgSkillSlot1
+  - UIImgTagHeroPanelRight_1
+  - UIImgCombatPunch
+  - UIImgSkillSlotCooltime2
+  m_RenderDataMap: {}
+  m_Tag: SHUIAtlasCombat
+  m_IsVariant: 0

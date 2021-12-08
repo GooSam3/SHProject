@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3232fb5fa583540bb178a719c54540, type: 3}
+  m_Name: AddressableImportSettings
+  m_EditorClassIdentifier: 
+  allowGroupCreation: 1
+  rules:
+  - path: Assets/AssetBundle/SHUIFrame/*.*
+    matchType: 0
+    groupName: BundleUIFrame
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/SHScriptData/*.*
+    matchType: 0
+    groupName: BundleScriptData
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/SHUnit/*.*
+    matchType: 0
+    groupName: BundleStage
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/SHUIAtlas/*.*
+    matchType: 0
+    groupName: BundleUIAtlas
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/SHEffect/*.*
+    matchType: 0
+    groupName: BundleEffect
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/SHUIRawImage/*.*
+    matchType: 0
+    groupName: BundleUIRawImage
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/SHScene/*.*
+    matchType: 0
+    groupName: BundleScene
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/SHLobbyHero/*.*
+    matchType: 0
+    groupName: BundleLobbyHero
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: 6098b42b9dd860d4ab27dae196cc2370, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 

@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BundleStage
+  m_EditorClassIdentifier: 
+  m_GroupName: BundleStage
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8f1ad9329db672749ac0887f77a43f8c
+  m_SerializeEntries:
+  - m_GUID: 5eeda5f8f23b40c4d9daaf5f83010765
+    m_Address: SHPrefabEnemySpiderR
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b1be587c2dceb96449ac19015a55c2d9
+    m_Address: SHPrefabEnemyCameleon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3991f627ce144bb43814df8168e4e21f
+    m_Address: SHPrefabEnemyPrologueR
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 635afa9b3022bee40b1a1a3d0a1775ee
+    m_Address: SHPrefabEnemyOctopusR
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 394e7198a579bef43b42c8588d72b864
+    m_Address: SHPrefabEnemyOctopusB
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a4255a89ba7487645a83a4cfac30567c
+    m_Address: SHPrefabEnemyOctopus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f2cae8f01425183479436d8818a0a6ea
+    m_Address: SHPrefabEnemyPrologue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ac16187ed2fb76340bda344282cc733e
+    m_Address: SHPrefabEnemyCameleonR
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3d0c3084e2aeccc4b96244dbf51036c2
+    m_Address: SHPrefabEnemySpiderB
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 62a2244e03d201744b2ee52bd119cca1
+    m_Address: SHPrefabEnemyHarborB
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ce73791bef8da204b88d5dbf25c0e4fc
+    m_Address: SHPrefabEnemyPrologueB
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 10ef54cb3fc6e1e4695b96ccc52a8c1b
+    m_Address: SHPrefabEnemySpider
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a3edba0eb99216247a10549f5f70e1bd
+    m_Address: SHPrefabEnemyNangi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 89b646efdc2583149a6c1806107b8405
+    m_Address: SHPrefabEnemyHarborR
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cbd245bde420b4a43a3dacbb6f866161
+    m_Address: SHPrefabEnemyHarbor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 341967485be1f144d91ef19d79f01e23
+    m_Address: SHPrefabEnemyCameleonB
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6af38f906c4e5e64c8cac69baff5dd86
+    m_Address: SHPrefabHeroIMGANG
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b630e43a548396a4daf07ebe8a35b635
+    m_Address: SHPrefabEnemyBossBehemoth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6ad0862cb1af02c4da5fbe7b574d3897
+    m_Address: SHPrefabHeroSaintPearl
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 07acb054d7107dc4e9d62c600d89b6a9
+    m_Address: SHPrefabHeroCodeNameB
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1ee910b8427d76a4abf09f35b5acb2cc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9741c69f42a0dca40939fb879d15b8da, type: 2}
+    - {fileID: 11400000, guid: e0a13495ebd21064384b69034a7e3c44, type: 2}

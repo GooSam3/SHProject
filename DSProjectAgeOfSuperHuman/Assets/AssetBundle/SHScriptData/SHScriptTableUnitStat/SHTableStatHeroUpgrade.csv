@@ -1,0 +1,22 @@
+﻿UpgradeID,Comment,UpgradeName,EUpgradeType,EUpgradeStatType,ECostType,CostValue,CostLevelValue,UpgradeValue,IconName
+9101,레벨업 공격,기본 공격력 증가,CombatStat,Attack,LevelPoint,1,1,10,None
+9102,레벨업 방어,기본 방어력 증가,CombatStat,Defense,LevelPoint,1,1,10,None
+9103,레벨업 체력,기본 생명력 증가,CombatStat,Stamina,LevelPoint,1,1,50,None
+9104,레벨업 명중,명중 증가,CombatStat,CriticalAnti,LevelPoint,1,1,100,None
+9201,능력 강화 공격,공격력 강화,CombatStat,AttackPercent,Gold,500,1.01,10,None
+9202,능력 강화 방어,방어력 강화,CombatStat,DefensePercent,Gold,500,1.01,10,None
+9203,능력 강화 체력,생명력 강화,CombatStat,StaminaPercent,Gold,500,1.01,10,None
+9204,능력 강화 크리 확률,치명타 강화,CombatStat,Critical,Gold,10000,1.01,10,None
+9205,능력 강화 크리 피해,치명타 피해 강화,CombatStat,CriticalDamage,Gold,10000,1.01,100,None
+9206,능력 강화 크리 방어,치명타 저항 강화,CombatStat,CriticalAnti,Gold,10000,1.01,10,None
+9207,능력 강화 크리피해 방어,치명타 피해 저항 강화,CombatStat,CriticalDamageAnti,Gold,10000,1.01,10,None
+9208,스킬 공격력 강화,스킬 공격력 강화,CombatStat,AttackSkill,Gold,1000,1.01,10,None
+9209,스킬 방어력 강화,스킬 방어력 강화,CombatStat,DefenseSkill,Gold,1000,1.01,10,None
+9210,공격막기 강화,공격 막기 강화,CombatStat,Block,Gold,1000,1.01,10,None
+9211,공격관통 강화,공격 관통 강화,CombatStat,BlockAnti,Gold,1000,1.01,10,None
+91011,리더스킬 강화,리더스킬 강화,SkillPoint,SkillReader,Soul,10000,1.75,100,None
+91012,일반스킬 강화,일반스킬 강화,SkillPoint,SkillNormal,Gold,10000,1.75,100,None
+91013,스킬1 강화,스킬 강화,SkillPoint,SkillSlot1,Gold,100000,1.1,100,None
+91014,스킬2 강화,스킬 강화,SkillPoint,SkillSlot2,Gold,100000,1.1,100,None
+91015,스킬3 강화,스킬 강화,SkillPoint,SkillSlot3,Gold,100000,1.1,100,None
+91016,콤보 스킬 강화,스킬 강화,SkillPoint,SkillCombo,Gold,100000,1.1,100,None

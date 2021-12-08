@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BundleUIRawImage
+  m_EditorClassIdentifier: 
+  m_GroupName: BundleUIRawImage
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7cc68fbff307f524792ce707e57cace7
+  m_SerializeEntries:
+  - m_GUID: 44e36179bf743b34ba409a3dcb55a10c
+    m_Address: UIImgFaceEnemyHarbor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 20cf344d55e35124489c245ebb574b10
+    m_Address: SHRawStageHarbor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1222d46bae0df544c9414f048449809d
+    m_Address: SHImgTitle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 14189f743c4cdf24d845c72fc3cb55d1
+    m_Address: SHImgLoadingScreen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a5f45f5f537b8974195a3ab7d0ce5813
+    m_Address: UIImgScreenDesertNight
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6d7a956b6e756b04f906e3f3d3936848
+    m_Address: UIImgScreenDesert
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e916ea44de1e8774199f9dc64db2ae78
+    m_Address: UIImgScreenDesert2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7e3a0376f8d52f2428adf00dfb4ccb10
+    m_Address: UIImgLobbyBack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b3fe9f8b605dc604e88550d4d9ea720d
+    m_Address: SHImgTitleText
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: abe1e4f442b55a24a828d13489ecb40d
+    m_Address: SHImgTitleTapToStart
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b16a03a87fd753c4191aebb074ee30d0
+    m_Address: SHImgTitleCrush
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 87e0c2e8ee1145241a5483ba94d9897a
+    m_Address: SHRawStageOryuDong
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 07756369d2f4f5146b89bbaf5f505c2d
+    m_Address: SHRawStageFerryShip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 90810ff33ad730e4f998611bd96327af
+    m_Address: UIRawPotentialBack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ebc4cf44398ea9140bd5c0151dddcd9b
+    m_Address: SHRawStageAirport
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cabb63c830218494883d379d54902396
+    m_Address: SHRawStageCity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 893fe1a8d6c82b748b7c376a02ccd068
+    m_Address: SHRawStageChurch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 228482e82e7127d4facbd59c6122e0aa
+    m_Address: SHRawStageSchool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f724bfb4a6e130941a374071df1f36cc
+    m_Address: SHRawStageSeobMuGwan
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1ee910b8427d76a4abf09f35b5acb2cc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7a0362c976a84dd4d95e7b7f7c67cd44, type: 2}
+    - {fileID: 11400000, guid: cfc0b0caa3eb9f949a941de39b80383c, type: 2}

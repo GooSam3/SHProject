@@ -1,0 +1,19 @@
+{
+    "name": "RPGCoreEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ba84c9b761c2bc846a169cd0b73762c5",
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

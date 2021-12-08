@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SHUIAtlasLobby
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 72d0549d785db324ab0d7dfcae32d20e, type: 3}
+    totalSpriteSurfaceArea: 670082
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 311d0970de50fe84884f6caa0f56ba3a, type: 3}
+  - {fileID: 21300000, guid: ac0ccfa099bf8b7408751015f7a5ee6c, type: 3}
+  - {fileID: 21300000, guid: cd00b293d53da494896a8394337df2ec, type: 3}
+  - {fileID: 21300000, guid: fb4dec0493d72844b9e6e23fb401dcdd, type: 3}
+  - {fileID: 21300000, guid: 06661b345cecb3441914f9d3e8837a9e, type: 3}
+  - {fileID: 21300000, guid: ceb261e48a31c6a47a6ebbbc9d589822, type: 3}
+  - {fileID: 21300000, guid: 24514ba557085154eaad943cff8720ea, type: 3}
+  - {fileID: 21300000, guid: 4a2fc358af41b6148a073e7582fbc331, type: 3}
+  - {fileID: 21300000, guid: 77ccaa68e0aef1748b181d0f47bf5922, type: 3}
+  - {fileID: 21300000, guid: 10a72919298a87b4984aafdd1c13d4c4, type: 3}
+  - {fileID: 21300000, guid: 357d1f197f778354cb866f5696852106, type: 3}
+  - {fileID: 21300000, guid: f86d701b762f456438610cb59dd606bf, type: 3}
+  - {fileID: 21300000, guid: 80d815bc8bcdd2a49a83eb35470ff131, type: 3}
+  - {fileID: 21300000, guid: 39eff42d3aefb6640aac762d6c180ffb, type: 3}
+  - {fileID: 21300000, guid: 692e179da9c5e5b40a3cb3de4f01d6fd, type: 3}
+  - {fileID: 21300000, guid: be6752bdd252ab24592206331b06eb09, type: 3}
+  - {fileID: 21300000, guid: aeef85cd9fd9e174bb383e7891c1571a, type: 3}
+  - {fileID: 21300000, guid: af5a343e4078b3e40a8e17f167682995, type: 3}
+  - {fileID: 21300000, guid: c041b87f4b31cba4083d3222d09ef155, type: 3}
+  - {fileID: 21300000, guid: a01fb3df6c6d9a64ba4f197c167b07a4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UIImgLobbyButtonMission
+  - UIImgLobbyButtonContent2
+  - UIImgLobbyButtonContent1
+  - UIImgGaugeEXPFill
+  - UIImgLobbyButtonBack
+  - UIImgLobbyBackBoardLineRight
+  - UIImgGaugeEXPBack
+  - UIImgLobbyHeroFaceBack
+  - UIImgLobbyButtonSummon
+  - UIImgUserNameBack
+  - UIImgLobbyButtonNotify
+  - UIImgLobbyButtonRanking
+  - UIImgLobbyBackBoardLineLeft
+  - UIImgLobbyBackBoardLineBottom
+  - UIImgLobbyButtonHero
+  - UIImgEventBannerCharacter
+  - UIImgLobbyBackBoardLineTop
+  - UIImgEventBannerBack
+  - UIImgLobbyButtonParty
+  - UIImgLobbyButtonShop
+  m_RenderDataMap: {}
+  m_Tag: SHUIAtlasLobby
+  m_IsVariant: 0

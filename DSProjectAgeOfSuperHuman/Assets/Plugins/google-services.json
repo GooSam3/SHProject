@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "561446968150",
+    "firebase_url": "https://theeraofoverman-default-rtdb.firebaseio.com",
+    "project_id": "theeraofoverman",
+    "storage_bucket": "theeraofoverman.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561446968150:android:06b58eef655a32e0ff94f7",
+        "android_client_info": {
+          "package_name": "com.DaeriSoft.EraOfOverman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561446968150-6qg7ipbarp7kd3nf49ouso8j4lfdk7qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.DaeriSoft.EraOfOverman",
+            "certificate_hash": "522ce16fd3ca590f17dc6ebdc65090d951abd5bc"
+          }
+        },
+        {
+          "client_id": "561446968150-u59bt4l7p1t7an5ar1987i5lbqkihck0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF6eXDHfcI0FPrQ8CdgNzZ9nskkvEY7NY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561446968150-u59bt4l7p1t7an5ar1987i5lbqkihck0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

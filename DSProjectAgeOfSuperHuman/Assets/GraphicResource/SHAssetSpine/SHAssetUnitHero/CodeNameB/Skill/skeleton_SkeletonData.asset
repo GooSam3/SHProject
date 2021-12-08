@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+  m_Name: skeleton_SkeletonData
+  m_EditorClassIdentifier: 
+  atlasAssets:
+  - {fileID: 11400000, guid: eece39fc245940a4483a16c0ebf6e90d, type: 2}
+  scale: 0.01
+  skeletonJSON: {fileID: 4900000, guid: ae408a52d9164084b9a20c4b0c4ce239, type: 3}
+  isUpgradingBlendModeMaterials: 0
+  blendModeMaterials:
+    requiresBlendModeMaterials: 1
+    applyAdditiveMaterial: 0
+    additiveMaterials: []
+    multiplyMaterials: []
+    screenMaterials:
+    - pageName: skeleton3.png
+      material: {fileID: 2100000, guid: 77f116a76456d554a8afd176b6dfa9dc, type: 2}
+    - pageName: skeleton.png
+      material: {fileID: 2100000, guid: f1ace398f3e0e434aacb85396ecc4515, type: 2}
+    - pageName: skeleton2.png
+      material: {fileID: 2100000, guid: 23e077eca6519594f81fd8dd9a63c9c1, type: 2}
+  skeletonDataModifiers: []
+  fromAnimation: []
+  toAnimation: []
+  duration: []
+  defaultMix: 0.2
+  controller: {fileID: 0}

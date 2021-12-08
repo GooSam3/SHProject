@@ -1,0 +1,90 @@
+
+skeleton.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle_1
+  rotate: false
+  xy: 172, 439
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+circle_2
+  rotate: false
+  xy: 2, 403
+  size: 99, 99
+  orig: 109, 109
+  offset: 5, 5
+  index: -1
+flame_1
+  rotate: false
+  xy: 103, 446
+  size: 67, 56
+  orig: 256, 256
+  offset: 95, 67
+  index: -1
+flame_10
+  rotate: false
+  xy: 442, 526
+  size: 187, 185
+  orig: 256, 256
+  offset: 43, 56
+  index: -1
+flame_2
+  rotate: true
+  xy: 442, 403
+  size: 121, 162
+  orig: 256, 256
+  offset: 62, 68
+  index: -1
+flame_3
+  rotate: true
+  xy: 220, 504
+  size: 180, 220
+  orig: 256, 256
+  offset: 39, 25
+  index: -1
+flame_4
+  rotate: true
+  xy: 710, 500
+  size: 215, 223
+  orig: 256, 256
+  offset: 30, 22
+  index: -1
+flame_5
+  rotate: false
+  xy: 239, 713
+  size: 232, 227
+  orig: 256, 256
+  offset: 14, 15
+  index: -1
+flame_6
+  rotate: false
+  xy: 473, 716
+  size: 235, 224
+  orig: 256, 256
+  offset: 9, 10
+  index: -1
+flame_7
+  rotate: false
+  xy: 2, 712
+  size: 235, 228
+  orig: 256, 256
+  offset: 6, 9
+  index: -1
+flame_8
+  rotate: false
+  xy: 710, 717
+  size: 230, 223
+  orig: 256, 256
+  offset: 6, 19
+  index: -1
+flame_9
+  rotate: true
+  xy: 2, 504
+  size: 206, 216
+  orig: 256, 256
+  offset: 26, 25
+  index: -1

@@ -1,0 +1,558 @@
+
+skeleton.png
+size: 2046,2046
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+F_hair_1
+  rotate: true
+  xy: 62, 2031
+  size: 13, 50
+  orig: 13, 52
+  offset: 0, 2
+  index: -1
+F_hair_2
+  rotate: true
+  xy: 141, 2025
+  size: 19, 64
+  orig: 19, 65
+  offset: 0, 1
+  index: -1
+F_tattoo_L
+  rotate: false
+  xy: 760, 1879
+  size: 136, 115
+  orig: 143, 123
+  offset: 3, 5
+  index: -1
+L_arm_1
+  rotate: true
+  xy: 1314, 1461
+  size: 187, 302
+  orig: 190, 305
+  offset: 1, 1
+  index: -1
+L_arm_1_1
+  rotate: true
+  xy: 2, 1917
+  size: 106, 180
+  orig: 108, 182
+  offset: 1, 1
+  index: -1
+L_arm_1_2
+  rotate: true
+  xy: 1189, 1831
+  size: 126, 222
+  orig: 126, 222
+  offset: 0, 0
+  index: -1
+L_arm_1_3
+  rotate: false
+  xy: 184, 1905
+  size: 125, 111
+  orig: 128, 113
+  offset: 1, 1
+  index: -1
+L_arm_1_4
+  rotate: true
+  xy: 556, 1891
+  size: 111, 202
+  orig: 111, 202
+  offset: 0, 0
+  index: -1
+L_arm_2
+  rotate: false
+  xy: 1094, 1475
+  size: 218, 194
+  orig: 221, 197
+  offset: 1, 2
+  index: -1
+L_arm_2_1
+  rotate: false
+  xy: 1618, 1458
+  size: 228, 190
+  orig: 228, 190
+  offset: 0, 0
+  index: -1
+L_arm_3
+  rotate: true
+  xy: 2, 802
+  size: 297, 494
+  orig: 300, 504
+  offset: 1, 5
+  index: -1
+L_arm_4
+  rotate: true
+  xy: 1273, 638
+  size: 311, 534
+  orig: 316, 552
+  offset: 3, 10
+  index: -1
+L_arm_tattoo
+  rotate: true
+  xy: 1446, 1955
+  size: 89, 137
+  orig: 91, 139
+  offset: 1, 1
+  index: -1
+L_arm_tattoo_L
+  rotate: true
+  xy: 859, 1516
+  size: 186, 233
+  orig: 213, 257
+  offset: 14, 12
+  index: -1
+L_clothes_1
+  rotate: true
+  xy: 1520, 1650
+  size: 153, 388
+  orig: 153, 388
+  offset: 0, 0
+  index: -1
+L_clothes_2
+  rotate: true
+  xy: 2, 403
+  size: 349, 575
+  orig: 349, 575
+  offset: 0, 0
+  index: -1
+L_earing_1
+  rotate: true
+  xy: 292, 2018
+  size: 26, 53
+  orig: 29, 55
+  offset: 1, 1
+  index: -1
+L_earing_1_1
+  rotate: true
+  xy: 511, 2012
+  size: 32, 50
+  orig: 35, 52
+  offset: 1, 1
+  index: -1
+L_eye1
+  rotate: false
+  xy: 563, 2010
+  size: 42, 34
+  orig: 45, 40
+  offset: 1, 5
+  index: -1
+L_hair_1
+  rotate: false
+  xy: 931, 1013
+  size: 470, 221
+  orig: 484, 221
+  offset: 11, 0
+  index: -1
+L_hand_1
+  rotate: false
+  xy: 1064, 1859
+  size: 123, 117
+  orig: 125, 120
+  offset: 1, 1
+  index: -1
+L_leg_1
+  rotate: false
+  xy: 590, 1551
+  size: 267, 181
+  orig: 270, 184
+  offset: 1, 2
+  index: -1
+L_leg_2
+  rotate: false
+  xy: 2, 1768
+  size: 195, 135
+  orig: 195, 135
+  offset: 0, 0
+  index: -1
+L_leg_tattoo
+  rotate: false
+  xy: 1573, 1806
+  size: 183, 131
+  orig: 187, 134
+  offset: 2, 1
+  index: -1
+L_leg_tattoo_L
+  rotate: false
+  xy: 2, 1385
+  size: 267, 200
+  orig: 302, 214
+  offset: 18, 1
+  index: -1
+L_pants
+  rotate: true
+  xy: 1783, 951
+  size: 283, 260
+  orig: 283, 260
+  offset: 0, 0
+  index: -1
+R_arm_1
+  rotate: true
+  xy: 659, 1054
+  size: 239, 270
+  orig: 244, 274
+  offset: 3, 2
+  index: -1
+R_arm_1_1
+  rotate: true
+  xy: 311, 1900
+  size: 110, 243
+  orig: 110, 243
+  offset: 0, 0
+  index: -1
+R_arm_1_2
+  rotate: true
+  xy: 172, 1587
+  size: 164, 191
+  orig: 167, 194
+  offset: 2, 2
+  index: -1
+R_arm_1_3
+  rotate: true
+  xy: 1739, 1939
+  size: 105, 201
+  orig: 105, 201
+  offset: 0, 0
+  index: -1
+R_arm_2
+  rotate: true
+  xy: 529, 1333
+  size: 216, 218
+  orig: 219, 223
+  offset: 1, 3
+  index: -1
+R_arm_2_1
+  rotate: true
+  xy: 749, 1295
+  size: 219, 224
+  orig: 219, 226
+  offset: 0, 2
+  index: -1
+R_arm_3
+  rotate: true
+  xy: 1170, 218
+  size: 418, 424
+  orig: 421, 430
+  offset: 1, 4
+  index: -1
+R_arm_tattoo
+  rotate: true
+  xy: 1585, 1943
+  size: 101, 152
+  orig: 109, 155
+  offset: 6, 2
+  index: -1
+R_arm_tattoo_L
+  rotate: false
+  xy: 1848, 1407
+  size: 196, 241
+  orig: 224, 273
+  offset: 13, 15
+  index: -1
+R_clothes_1
+  rotate: true
+  xy: 593, 1734
+  size: 139, 383
+  orig: 139, 383
+  offset: 0, 0
+  index: -1
+R_clothes_1_1
+  rotate: false
+  xy: 975, 1250
+  size: 390, 209
+  orig: 390, 209
+  offset: 0, 0
+  index: -1
+R_clothes_2
+  rotate: true
+  xy: 579, 363
+  size: 389, 589
+  orig: 389, 589
+  offset: 0, 0
+  index: -1
+R_earing_1
+  rotate: true
+  xy: 745, 2004
+  size: 40, 43
+  orig: 43, 45
+  offset: 2, 1
+  index: -1
+R_earing_1_1
+  rotate: false
+  xy: 790, 2004
+  size: 46, 40
+  orig: 48, 42
+  offset: 1, 1
+  index: -1
+R_eye1
+  rotate: false
+  xy: 247, 2019
+  size: 43, 25
+  orig: 46, 31
+  offset: 1, 5
+  index: -1
+R_hair_1
+  rotate: false
+  xy: 1367, 1236
+  size: 473, 220
+  orig: 485, 220
+  offset: 0, 0
+  index: -1
+R_hand_1
+  rotate: true
+  xy: 1413, 1819
+  size: 134, 158
+  orig: 136, 166
+  offset: 1, 7
+  index: -1
+R_leg_1
+  rotate: false
+  xy: 421, 1742
+  size: 170, 147
+  orig: 177, 149
+  offset: 2, 1
+  index: -1
+R_leg_tattoo
+  rotate: false
+  xy: 1003, 1990
+  size: 83, 54
+  orig: 85, 57
+  offset: 1, 1
+  index: -1
+R_leg_tattoo_L
+  rotate: false
+  xy: 1758, 1805
+  size: 174, 132
+  orig: 203, 147
+  offset: 14, 1
+  index: -1
+R_pants
+  rotate: false
+  xy: 364, 1101
+  size: 293, 230
+  orig: 293, 230
+  offset: 0, 0
+  index: -1
+belt_1
+  rotate: false
+  xy: 898, 1875
+  size: 164, 113
+  orig: 166, 115
+  offset: 1, 1
+  index: -1
+belt_2
+  rotate: false
+  xy: 978, 1704
+  size: 180, 153
+  orig: 180, 153
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 1403, 987
+  size: 247, 378
+  orig: 247, 378
+  offset: 0, 0
+  index: -1
+body2
+  rotate: false
+  xy: 2, 1119
+  size: 360, 220
+  orig: 363, 223
+  offset: 1, 2
+  index: -1
+clothes_b
+  rotate: false
+  xy: 607, 2009
+  size: 52, 35
+  orig: 57, 38
+  offset: 2, 2
+  index: -1
+clothes_b_1
+  rotate: false
+  xy: 114, 2026
+  size: 25, 18
+  orig: 27, 20
+  offset: 1, 1
+  index: -1
+clothes_b_2
+  rotate: true
+  xy: 1088, 1978
+  size: 66, 119
+  orig: 69, 123
+  offset: 1, 2
+  index: -1
+clothes_b_3
+  rotate: false
+  xy: 498, 754
+  size: 773, 257
+  orig: 773, 257
+  offset: 0, 0
+  index: -1
+earing_S
+  rotate: true
+  xy: 392, 2014
+  size: 30, 39
+  orig: 33, 42
+  offset: 2, 1
+  index: -1
+hair_1
+  rotate: false
+  xy: 1322, 1658
+  size: 196, 159
+  orig: 196, 159
+  offset: 0, 0
+  index: -1
+hair_2
+  rotate: true
+  xy: 1209, 1959
+  size: 85, 235
+  orig: 85, 235
+  offset: 0, 0
+  index: -1
+hair_3
+  rotate: false
+  xy: 271, 1341
+  size: 256, 214
+  orig: 256, 214
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 199, 1753
+  size: 220, 145
+  orig: 221, 145
+  offset: 1, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 1603
+  size: 168, 163
+  orig: 168, 163
+  offset: 0, 0
+  index: -1
+mouth_1
+  rotate: false
+  xy: 661, 2005
+  size: 82, 39
+  orig: 85, 43
+  offset: 1, 2
+  index: -1
+mouth_2
+  rotate: false
+  xy: 918, 1992
+  size: 83, 52
+  orig: 86, 54
+  offset: 2, 1
+  index: -1
+mouth_3
+  rotate: false
+  xy: 838, 1996
+  size: 78, 48
+  orig: 81, 55
+  offset: 2, 6
+  index: -1
+neck
+  rotate: false
+  xy: 365, 1557
+  size: 223, 183
+  orig: 226, 186
+  offset: 1, 1
+  index: -1
+necklace_1
+  rotate: true
+  xy: 1160, 1671
+  size: 158, 160
+  orig: 158, 160
+  offset: 0, 0
+  index: -1
+necklace_2
+  rotate: true
+  xy: 35, 2032
+  size: 12, 25
+  orig: 14, 28
+  offset: 1, 2
+  index: -1
+necklace_3
+  rotate: true
+  xy: 347, 2016
+  size: 28, 43
+  orig: 30, 46
+  offset: 1, 1
+  index: -1
+necklace_4
+  rotate: true
+  xy: 207, 2023
+  size: 21, 38
+  orig: 25, 40
+  offset: 1, 1
+  index: -1
+necklace_5
+  rotate: false
+  xy: 433, 2014
+  size: 43, 30
+  orig: 46, 32
+  offset: 1, 1
+  index: -1
+nose
+  rotate: true
+  xy: 478, 2014
+  size: 30, 31
+  orig: 33, 33
+  offset: 1, 1
+  index: -1
+piercing
+  rotate: false
+  xy: 22, 2034
+  size: 11, 10
+  orig: 14, 13
+  offset: 2, 2
+  index: -1
+piercing_hide
+  rotate: false
+  xy: 2, 2038
+  size: 18, 6
+  orig: 21, 8
+  offset: 1, 1
+  index: -1
+
+skeleton2.png
+size: 1559,1559
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_effect
+  rotate: false
+  xy: 546, 814
+  size: 548, 743
+  orig: 555, 750
+  offset: 1, 4
+  index: -1
+L_parabola
+  rotate: true
+  xy: 2, 82
+  size: 598, 779
+  orig: 603, 785
+  offset: 3, 4
+  index: -1
+R_arm_4
+  rotate: true
+  xy: 1096, 1098
+  size: 459, 461
+  orig: 466, 468
+  offset: 4, 3
+  index: -1
+R_effect
+  rotate: false
+  xy: 2, 682
+  size: 542, 875
+  orig: 548, 887
+  offset: 3, 6
+  index: -1
+R_parabola
+  rotate: true
+  xy: 783, 272
+  size: 540, 736
+  orig: 544, 743
+  offset: 3, 4
+  index: -1

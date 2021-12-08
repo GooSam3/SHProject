@@ -1,0 +1,24 @@
+{
+    "name": "RPGCore",
+    "rootNamespace": "",
+    "references": [
+        "GUID:36c45487fbc1e2943bbbc035470034d5",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:84651a3751eca9349aac36a66bba901b",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:68765d262e2128e4ab49c983f3411946",
+        "GUID:5dfe3270774b47942a7f3eb797d3c839",
+        "GUID:059c931883a8a274690376c0592ea9a0",
+        "GUID:60bfecf5cb232594891bc622f40d6bed",
+        "GUID:08d1c582746949b40ba6a45cdb776bdf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

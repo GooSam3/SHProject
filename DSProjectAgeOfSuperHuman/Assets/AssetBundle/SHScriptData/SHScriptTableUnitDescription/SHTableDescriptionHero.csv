@@ -1,0 +1,12 @@
+﻿UnitID,UnitName,UIFaceName,IconName,UnitPrefabName,UnitGrade,StoryID,SkillLeft,SkillRight,SkillReader,SkillSlot1,SkillSlot2,SkillSlot3,SkillRageCombo,SkillPassive1,SkillPassive2,SkillPassive3,PreLoadAsset,Attack,AttackSkill,AttackPercent,Defense,DefenseSkill,DefensePercent,Critical,CriticalAnti,CriticalDamage,CriticalDamageAnti,Hit,Dodge,Block,BlockAnti,RecoverPerSecond,Stamina,StaminaPercent,ExtraGold,ExtraEXP,ExtraItem
+101,임   강,UIImgFaceImGang,None,SHPrefabHeroIMGANG,0,1000,1011,1012,2000,1013,1014,1015,1016,0,0,0,"SHEffectHitBasic,SHEffectHitCritical,SHEffectNaturalization",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+102,코드네임 B,UIImgFaceCodeNameB,None,SHPrefabHeroCodeNameB,0,1001,3001,3002,2000,3011,3012,3013,3016,0,0,0,"SHEffectHitBasic,SHEffectHitCritical,SHEffectBazooperSnipe",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+103,세이트펄,UIImgFaceSaintPearl,None,SHPrefabHeroSaintPearl,0,1002,2001,2002,2000,2013,2014,2015,2016,0,0,0,"SHEffectHitBasic,SHEffectHitCritical,SHEffectFlashExplosion",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+104,오방원,SHFace_GrandFather,None,SHPrefabHeroIMGANG,0,1003,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+105,갤런 위드로,SHFace_Widro,None,SHPrefabHeroIMGANG,0,1004,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+106,맷 디온,SHFace_Dion,None,SHPrefabHeroIMGANG,0,1005,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+107,제인 소나타,SHFace_Sonata,None,SHPrefabHeroIMGANG,0,1006,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+108,막심 바실로프,SHFace_Maxim,None,SHPrefabHeroIMGANG,0,1007,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+109,키릴로,SHFace_Cyrillo,None,SHPrefabHeroIMGANG,0,1008,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+110,난   기,SHFace_Nangi,None,SHPrefabHeroIMGANG,0,1009,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0
+111,단   양,SHFace_DanYang,None,SHPrefabHeroIMGANG,0,1010,1011,1012,2000,1013,1014,1015,1015,0,0,0,"SHEffectHitBasic,SHEffectHitCritical ",100,0,0,5,0,0,500,0,0,0,0,0,0,0,100,2000,0,0,0,0

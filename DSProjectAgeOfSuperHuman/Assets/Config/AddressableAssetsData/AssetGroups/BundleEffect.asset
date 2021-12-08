@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BundleEffect
+  m_EditorClassIdentifier: 
+  m_GroupName: BundleEffect
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 545f2804a1a31434db1d58dc9308a9df
+  m_SerializeEntries:
+  - m_GUID: 6c3f1e48c4c13094e9735f7f11307d63
+    m_Address: SHEffectCameraJumpKick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2500c3396b7af714790577e7bdd32064
+    m_Address: SHEffectPunch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 188442a9da4a51c49af98136dde0196b
+    m_Address: SHEffectCoolTimeReduce
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 478eab5fdb348f54bb4bcbbb203251f2
+    m_Address: SHEffectDashScreen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 81a4ece49039dbd4385f05862d0322e3
+    m_Address: SHEffectKnockBack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4322bbb439a9e2c419ede238861a8c50
+    m_Address: SHEffectHitNormalYellow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 02da75d49e8eb4747ba7af1c07db4306
+    m_Address: SHEffectNaturalization
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6af4489b12474444e90916e8c6ca36f4
+    m_Address: SHEffectCharacterMove
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 28b9bda5478e022438afe568ccc5dbc1
+    m_Address: SHEffectCharacterShake
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a779869f808e1c84796074d5d24b5568
+    m_Address: SHEffectCameraShake
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9f8c34f37aa832145b50395baf52a8dd
+    m_Address: SHEffectDarkEnergyGround
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2867cdb6922f68b4caf2c315d68e0862
+    m_Address: SHEffectCrashImpact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8805b9dbe5796104a834faeb4f2f842f
+    m_Address: SHEffectHitNormalWhite
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e5e62e851a15da24eab9784e9adc6fc6
+    m_Address: SHEffectHitNormalPurple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: effaa390f1359074ab0ac003816e9377
+    m_Address: SHEffectHitBasic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8e69e64e0d7a9f14d8448975eacd0e7d
+    m_Address: SHEffectStageRageCombo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2df117719ea4a4c499263f2d2010a33a
+    m_Address: SHEffectKnockBackSmoke
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2ce42c97ecfaf53439e950d6c6325bcb
+    m_Address: SHEffectHitCritical
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3851d70d47344534d8d3d62051cb1517
+    m_Address: SHEffectEnemyDisappear
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cee0202d0e08e46459b4a86d0e82c856
+    m_Address: SHEffectHitMarkGun
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 50bddb31cda51a049a5d31bf23b060c3
+    m_Address: SHEffectBazooperSnipe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b2078ac0ea343c6499aeeeec304acc9c
+    m_Address: SHEffectFlashExplosion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ce2aaeb85e1f4fc4784e54224f5d88cc
+    m_Address: SHEffectTagHero
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1ee910b8427d76a4abf09f35b5acb2cc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4a4246c4aaf807144b04420815bb8688, type: 2}
+    - {fileID: 11400000, guid: ecf0d3109f4480f4abd07a98dbb4da16, type: 2}

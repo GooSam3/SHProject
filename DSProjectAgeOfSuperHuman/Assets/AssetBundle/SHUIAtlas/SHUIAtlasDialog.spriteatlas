@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SHUIAtlasDialog
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 44822cce9bf951348bb041f0af1dd60f, type: 3}
+    totalSpriteSurfaceArea: 2157980
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 244fc34014f9f734c951d698a6db76b8, type: 3}
+  - {fileID: 21300000, guid: 43dd1e032b431fb4f93aaecf58ea68cf, type: 3}
+  - {fileID: 21300000, guid: 61129dc5fc7db934daf6651383df7c8e, type: 3}
+  - {fileID: 21300000, guid: 56ea8d978993fdb48ad3123cd4f38915, type: 3}
+  - {fileID: 21300000, guid: 20d84aa8768eefa4a817eeae172638bd, type: 3}
+  - {fileID: 21300000, guid: 115af2d8c6c9b104884a92fae25cca5f, type: 3}
+  - {fileID: 21300000, guid: ba2befca4a9504f44ab1b2290169aea7, type: 3}
+  - {fileID: 21300000, guid: 45b6e58bb0782a740aa9822fbf22fb59, type: 3}
+  - {fileID: 21300000, guid: f2ecca8ceb437b44ea65cb21abda2178, type: 3}
+  - {fileID: 21300000, guid: 3365ce8edbe68cb4a80179209f4e6e32, type: 3}
+  - {fileID: 21300000, guid: afdc88cf302a75e43afe352cf2fc23e0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UIImgDialogBackType4
+  - UIImgDialogHeptaHorn
+  - UIImgDialogBackDescription
+  - UIImgDialogBackType2
+  - UIImgDialogBackBoardAlpha
+  - UIImgDialogPopup
+  - UIImgDialogBackType3
+  - UIImgDialogBackType1
+  - UIImgDialogHarbor
+  - UIImgDialogBackBoardBlack
+  - UIImgDialogBackBoradWhite
+  m_RenderDataMap: {}
+  m_Tag: SHUIAtlasDialog
+  m_IsVariant: 0

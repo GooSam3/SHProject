@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BundleUIFrame
+  m_EditorClassIdentifier: 
+  m_GroupName: BundleUIFrame
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ac2c500b8bb4eb345b10a535a4e6ffe4
+  m_SerializeEntries:
+  - m_GUID: 74cefd9a78fed4148ac0bbbbc5bdf8fd
+    m_Address: UIFrameCombatHero
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1d7f2e10e101f4a4cbae464051bf05eb
+    m_Address: UIFrameNumberTag
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 95fef06dfe21ba7499f60ac4422c5187
+    m_Address: UIFrameScreenIdleMode
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5d0e1a869e0c45246b36dd521dd38173
+    m_Address: UIFrameLoadingScreen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 21e108352fdd8ae4bbf9c7cbcf98cff6
+    m_Address: UIFrameLogin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7ea2c26ff48d6904bab89c884013f311
+    m_Address: UIFrameLobby
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bd945fda0c327a34595cd9bf2773c2e7
+    m_Address: UIFrameResource
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d04d9fdbcbcad234cad77cab419f927f
+    m_Address: UIFrameContentsSelect
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e5f7994cd5ec1274d824745176f7cad7
+    m_Address: UIFrameParty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 01c5cd1ca53922240a81f18b26e0c2bb
+    m_Address: UIFrameShop
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5717406694aef594cbee73dfc5ce0e37
+    m_Address: UIFrameMessagePopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c0e4eef3d3d2a0e4ba2dde19d3e3b315
+    m_Address: UIFrameScreenIndicator
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: eb686ab15ca2e83458a64e908e435f87
+    m_Address: UIFrameNavigationBar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2708972eec5204d4da80382864cde330
+    m_Address: UIFrameHeroInfomation
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2637fe3fa6d9c4a4c85cde8c98a176ee
+    m_Address: UIFrameItemBag
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6e1596be2190e9f47aae1838cf266606
+    m_Address: UIFramePotentialBingo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5b9b6d6928bfed648aa755b493f6786c
+    m_Address: UIFrameMessageNotify
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1ee910b8427d76a4abf09f35b5acb2cc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5f4d30aeace9e5140ae3f8b41f5c7a87, type: 2}
+    - {fileID: 11400000, guid: 7873d99176d9a9e4e88cb56764e4cfea, type: 2}

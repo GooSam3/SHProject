@@ -1,0 +1,90 @@
+
+gate.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gate_ani_1
+  rotate: false
+  xy: 987, 1251
+  size: 89, 165
+  orig: 101, 182
+  offset: 6, 8
+  index: -1
+gate_ani_2
+  rotate: false
+  xy: 569, 13
+  size: 78, 102
+  orig: 88, 128
+  offset: 5, 15
+  index: -1
+gate_ani_3
+  rotate: false
+  xy: 691, 1255
+  size: 68, 70
+  orig: 84, 94
+  offset: 8, 13
+  index: -1
+gate_dust_1
+  rotate: false
+  xy: 691, 1327
+  size: 294, 234
+  orig: 305, 280
+  offset: 3, 26
+  index: -1
+gate_dust_2
+  rotate: false
+  xy: 691, 1563
+  size: 373, 379
+  orig: 413, 409
+  offset: 14, 15
+  index: -1
+gate_effect_1
+  rotate: false
+  xy: 761, 1271
+  size: 55, 54
+  orig: 66, 66
+  offset: 5, 6
+  index: -1
+gate_hole_1
+  rotate: false
+  xy: 2, 117
+  size: 537, 537
+  orig: 548, 549
+  offset: 5, 6
+  index: -1
+gate_hole_2
+  rotate: false
+  xy: 541, 117
+  size: 537, 537
+  orig: 548, 549
+  offset: 5, 6
+  index: -1
+gate_hole_back
+  rotate: false
+  xy: 2, 1251
+  size: 687, 691
+  orig: 710, 719
+  offset: 12, 13
+  index: -1
+gate_ring_1
+  rotate: false
+  xy: 607, 799
+  size: 451, 450
+  orig: 462, 467
+  offset: 6, 5
+  index: -1
+gate_ring_2
+  rotate: true
+  xy: 2, 656
+  size: 593, 603
+  orig: 605, 612
+  offset: 7, 4
+  index: -1
+gate_shadow
+  rotate: false
+  xy: 2, 2
+  size: 565, 113
+  orig: 581, 122
+  offset: 8, 5
+  index: -1

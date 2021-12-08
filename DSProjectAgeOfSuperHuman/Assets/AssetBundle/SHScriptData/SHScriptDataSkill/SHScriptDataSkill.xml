@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (x64) (http://www.altova.com) by MESMERiZE (MSM) -->
+<RootSkillData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../SHExternalScriptData/SkillBuff/SHSheetSkill.xsd">
+	<SkillHero ToolTip="임강 스킬 목록">
+		<SkillActive hSkillID="1011" ToolTip="임강 일반평타스킬 왼쪽" ETargetingType="SingleEnemy" SkillName="왼손 타격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Normal_Left"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91012"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="공격종료시 오른쪽 평타 쿨타임 감소">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Normal_Left" fCoolTime="0.5" fGlobalCoolTime="0" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack2" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmLeft" EffectName="SHEffectHitBasic" fDuration="0" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="ArmLeft" PropertyID="91012" fDamageRate="1" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryCommon>
+									<TaskReduceCoolTime CoolTimeName="Normal_Right" fCoolTime="0.5"/>
+									<TaskReduceCoolTimeRandom iCoolTimeMin="1" iCoolTimeMax="2"/>
+									<TaskStateEnd ToolTip="타격시점에 스킬종료"/>
+								</TaskCategoryCommon>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="1012" ToolTip="임강 일반평타스킬오른쪽" ETargetingType="SingleEnemy" SkillName="오른손 타격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Normal_Right"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91012"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="공격종료시 왼쪽 평타 쿨타임 감소">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Normal_Right" fCoolTime="0.5" fGlobalCoolTime="0" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack1" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmRight" EffectName="SHEffectHitBasic" fDuration="0" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="ArmRight" PropertyID="91012" fDamageRate="1" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryCommon>
+									<TaskReduceCoolTime CoolTimeName="Normal_Left" fCoolTime="0.5"/>
+									<TaskReduceCoolTimeRandom iCoolTimeMin="1" iCoolTimeMax="2"/>
+									<TaskStateEnd ToolTip="타격시점에 스킬종료"/>
+								</TaskCategoryCommon>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="1013" ToolTip="임강 스킬 1번" ETargetingType="SingleEnemy" SkillName="집중 난타">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Skill01"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91013"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="1번 스킬">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Skill01" fCoolTime="20" fGlobalCoolTime="2" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_01" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" fDamageRate="0.5" PropertyID="91013" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_01">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_02">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_03">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_04">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_05">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_06">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_07">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_08">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_09">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_10">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_11">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_12">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_13">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.7" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_14">
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectStage EStageEffectType="CameraKnockBack" iArg="0" fArg="0" fDuration="0"/>
+									<TaskEffectCharacter EUnitSocket="Ground" EffectName="SHEffectKnockBackSmoke" fDuration="0" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Body" PropertyID="91013" fDamageRate="5" SoundName="None" fGaugeLockDelay="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="2000" fDuration="3" PropertyName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="1014" ToolTip="임강 스킬 2번" ETargetingType="SingleEnemy" SkillName="내려찍기">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Skill02"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91014"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="1타후 내려찍기">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Skill02" fCoolTime="40" fGlobalCoolTime="2.6" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_02" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91014" fDamageRate="4" SoundName="None" fGaugeLockDelay="10">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectStage EStageEffectType="CameraJumpKick" iArg="0" fArg="0" fDuration="0"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_01">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91014" fDamageRate="8" fGaugeLockDelay="0" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectTransform EffectName="SHEffectCharacterMove" fDuration="0" fDestX="0" fDestY="-4" fDestZ="0"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="1015" ToolTip="임강 스킬 3번" ETargetingType="SingleEnemy" SkillName="자연화">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Skill03"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91015"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="자연화 버프 출력">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Skill03" fCoolTime="15" fGlobalCoolTime="1" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_03" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventEnter>
+							<SkillTaskList>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="1100" fDuration="10" PropertyName="91015">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Me"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+							</SkillTaskList>
+						</SkillTaskEventEnter>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="1016" ToolTip="임강 콤보스킬" ETargetingType="SingleEnemy" SkillName="난타">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Combo1"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="0"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="임강 분노 콤보 스킬">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Combo1" fCoolTime="3" fGlobalCoolTime="1" fFeverPoint="0"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_04" bLoop="true" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventEnter>
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectStage EStageEffectType="RageComboType1" iArg="0" fArg="0" fDuration="0"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventEnter>
+						<SkillTaskEventExit>
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectStageEnd EStageEffectType="RageComboType1"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventExit>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" fDamageRate="0.5" PropertyID="91013" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_01">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_02">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_03">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_04">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_05">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_06">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_07">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_08">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_09">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_10">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_11">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_12">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_13">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.7" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_14">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Body" PropertyID="91013" fDamageRate="5" SoundName="None" fGaugeLockDelay="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="2000" fDuration="3" PropertyName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+	</SkillHero>
+	<SkillHero ToolTip="세인트펄 스킬목록">
+		<SkillActive hSkillID="2001" ToolTip="세인트 펄 일반평타스킬 왼쪽" ETargetingType="SingleEnemy" SkillName="왼손 타격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Normal_Left"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91012"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="공격종료시 오른쪽 평타 쿨타임 감소">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Normal_Left" fCoolTime="0.5" fGlobalCoolTime="0" fFeverPoint="500"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack2" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmLeft" EffectName="SHEffectHitBasic" fDuration="0" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+								<TaskCategoryCommon>
+									<TaskReduceCoolTime CoolTimeName="Normal_Right" fCoolTime="0.5"/>
+									<TaskReduceCoolTimeRandom iCoolTimeMin="1" iCoolTimeMax="2"/>
+									<TaskStateEnd ToolTip="타격시점에 스킬종료"/>
+								</TaskCategoryCommon>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="ArmLeft" PropertyID="91012" fDamageRate="1" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="2002" ToolTip="세인트 펄 일반평타스킬오른쪽" ETargetingType="SingleEnemy" SkillName="오른손 타격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Normal_Right"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91012"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="공격종료시 왼쪽 평타 쿨타임 감소">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Normal_Right" fCoolTime="0.5" fGlobalCoolTime="0" fFeverPoint="5"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack1" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmRight" EffectName="SHEffectHitBasic" fDuration="0" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+								<TaskCategoryCommon>
+									<TaskReduceCoolTime CoolTimeName="Normal_Left" fCoolTime="0.5"/>
+									<TaskReduceCoolTimeRandom iCoolTimeMin="1" iCoolTimeMax="2"/>
+									<TaskStateEnd ToolTip="타격시점에 스킬종료"/>
+								</TaskCategoryCommon>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="ArmRight" PropertyID="91012" fDamageRate="1" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="2013" ToolTip="세인트펄 1번 섬광일격" ETargetingType="SingleEnemy" SkillName="섬광 일격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Skill01"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91013"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="1타 데미지">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Skill01" fCoolTime="20" fGlobalCoolTime="2" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_01" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Body" fDamageRate="5" PropertyID="91013" SoundName="None" HitEffectName="SHEffectFlashExplosion">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectStage EStageEffectType="CameraKnockBack" iArg="0" fArg="0" fDuration="0"/>
+								</TaskCategoryEffect>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="2000" fDuration="3" PropertyName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="2014" ToolTip="세인트펄 2번 회복" ETargetingType="SingleEnemy" SkillName="섬광 회복">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="skill_02"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91014"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="2번스킬 본인 및 파티 회복">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="skill_02" fCoolTime="40" fGlobalCoolTime="1" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="ready" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList/>
+				</SkillStateAnimation>
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceNone/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_02" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamageDecrescence EDamageType="Heal" EUnitSocket="Ground" PropertyID="91014" fDamagePrime="2" fDamageSecond="1" fDamageThird="0" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_FriendAll"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamageDecrescence>
+								</TaskCategoryDamage>
+								<TaskCategoryCommon>
+									<TaskStateEnd ToolTip="반응시간 단축을 위해서 힐 처리 직후 스킬종료"/>
+								</TaskCategoryCommon>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="2015" ToolTip="세인트펄 3번 버프" ETargetingType="SingleEnemy" SkillName="섬광의 분노">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="skill_03"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91015"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="3번 스킬 공격력 버프">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="skill_03" fCoolTime="30" fGlobalCoolTime="0.8" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_03" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventExit>
+							<SkillTaskList>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="2015" fDuration="10" PropertyName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Me"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+							</SkillTaskList>
+						</SkillTaskEventExit>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="2016" ToolTip="세인트펄 콤보스킬" ETargetingType="SingleEnemy" SkillName="섬광 연타">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Combo1"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="0"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="세인트펄 분노 콤보 스킬">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Combo1" fCoolTime="3" fGlobalCoolTime="1" fFeverPoint="0"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_04" bLoop="true" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventEnter>
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectStage EStageEffectType="RageComboType1" iArg="0" fArg="0" fDuration="0"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventEnter>
+						<SkillTaskEventExit>
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectStageEnd EStageEffectType="RageComboType1"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventExit>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" fDamageRate="0.5" PropertyID="91013" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_01">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_02">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_03">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_04">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_05">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_06">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_07">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_08">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_09">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_10">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_11">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_12">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmRight" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="1" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_13">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="ArmLeft" PropertyID="91013" fDamageRate="0.5" SoundName="None" fGaugeLockDelay="2">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.7" fRightAngle="30"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_14">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Body" PropertyID="91013" fDamageRate="5" SoundName="None" fGaugeLockDelay="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="2000" fDuration="3" PropertyName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+	</SkillHero>
+	<SkillHero ToolTip="코드네임 B">
+		<SkillActive hSkillID="3001" ToolTip="코드네임B 일반평타스킬 왼쪽" ETargetingType="SingleEnemy" SkillName="왼손 타격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Normal_Left"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91012"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="공격종료시 오른쪽 평타 쿨타임 감소">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Normal_Left" fCoolTime="0.5" fGlobalCoolTime="0" fFeverPoint="500"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack2" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmLeft" EffectName="SHEffectHitBasic" fDuration="0" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="ArmLeft" PropertyID="91012" fDamageRate="1" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryCommon>
+									<TaskReduceCoolTime CoolTimeName="Normal_Right" fCoolTime="0.5"/>
+									<TaskReduceCoolTimeRandom iCoolTimeMin="1" iCoolTimeMax="2"/>
+									<TaskStateEnd ToolTip="타격시점에 스킬종료"/>
+								</TaskCategoryCommon>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="3002" ToolTip="코드네임B 일반 평타스킬 오른쪽" ETargetingType="SingleEnemy" SkillName="오른손 타격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Normal_Right"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91012"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="공격종료시 왼쪽 평타 쿨타임 감소">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Normal_Right" fCoolTime="0.5" fGlobalCoolTime="0" fFeverPoint="5"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack1" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmRight" EffectName="SHEffectHitBasic" fDuration="0" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="ArmRight" PropertyID="91012" fDamageRate="1" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryCommon>
+									<TaskReduceCoolTime CoolTimeName="Normal_Left" fCoolTime="0.5"/>
+									<TaskReduceCoolTimeRandom iCoolTimeMin="1" iCoolTimeMax="2"/>
+									<TaskStateEnd ToolTip="타격시점에 스킬종료"/>
+								</TaskCategoryCommon>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="3011" ToolTip="코드네임B 1번스킬" ETargetingType="SingleEnemy" SkillName="케서레일 버스트샷">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Skill01"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91013"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="1번 스킬">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Skill01" fCoolTime="20" fGlobalCoolTime="4" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_01" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" fDamageRate="3" PropertyID="91013" SoundName="None" HitEffectName="SHEffectHitMarkGun">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="2" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_01">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="2" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_02">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" SoundName="None" HitEffectName="SHEffectHitMarkGun">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="2" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_03">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="2" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_04">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="2" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="3012" ToolTip="코드네임B 2번 스킬" ETargetingType="SingleEnemy" SkillName="바주퍼 저격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Skill02"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91014"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="1타 데미지">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Skill02" fCoolTime="20" fGlobalCoolTime="2" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_02" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Head" fDamageRate="6" PropertyID="91014" SoundName="None" HitEffectName="SHEffectBazooperSnipe">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="3013" ToolTip="코드네임B 3번 버프" ETargetingType="SingleEnemy" SkillName="공격모드">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="skill_03"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="91015"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="3번 스킬 공격력 버프">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="skill_03" fCoolTime="30" fGlobalCoolTime="0.8" fFeverPoint="200"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_03" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventExit>
+							<SkillTaskList>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="3013" fDuration="10" PropertyName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Me"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+							</SkillTaskList>
+						</SkillTaskEventExit>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="3016" ToolTip="코드네임B 콤보스킬" ETargetingType="SingleEnemy" SkillName="케서레일 체인샷">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Combo1"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="0"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="코드네임B 분노 콤보 스킬">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Combo1" fCoolTime="3" fGlobalCoolTime="1" fFeverPoint="0"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_04" bLoop="true" fDuration="0" fAniSpeed="2" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventEnter>
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectStage EStageEffectType="RageComboType1" iArg="0" fArg="0" fDuration="0"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventEnter>
+						<SkillTaskEventExit>
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectStageEnd EStageEffectType="RageComboType1"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventExit>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.6" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_01">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.4" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_02">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.6" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_03">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.4" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_04">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Random_All" PropertyID="91013" fDamageRate="3" HitEffectName="SHEffectHitMarkGun" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharShake EffectName="SHEffectCharacterShake" fDuration="0" fStrength="0.6" fRightAngle="90"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+	</SkillHero>
+	<SkillEnemy ToolTip="일반몹 일반스킬">
+		<SkillActive ToolTip="일반공격" hSkillID="5000" ETargetingType="SingleEnemy" SkillName="일반공격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="NormalAttack"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="0"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="기본 2연타">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="NormalAttack" fCoolTime="2" fGlobalCoolTime="0" fFeverPoint="0"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack1" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="Body" PropertyID="0" fDamageRate="0" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+	</SkillEnemy>
+	<SkillEnemy ToolTip="베히모스">
+		<SkillActive ToolTip="일반공격" hSkillID="6000" ETargetingType="SingleEnemy" SkillName="일반공격">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="NormalAttack"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="0"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="기본 2연타">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="NormalAttack" fCoolTime="2" fGlobalCoolTime="0" fFeverPoint="0"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="attack1" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="Body" PropertyID="0" fDamageRate="0" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmLeft" EffectName="SHEffectCrashImpact" fDuration="1" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+						<SkillTaskEventAnimation EAnimEventType="damage_01">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackNormal" EUnitSocket="Body" PropertyID="0" fDamageRate="0" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="ArmRight" EffectName="SHEffectCrashImpact" fDuration="1" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive ToolTip="베히모스 스킬 1 / 피격시 피해 증가 50%가 걸린다.  태그를 해서 방어가 필요하다. " hSkillID="6001" ETargetingType="SingleEnemy" SkillName="기 방출">
+			<SkillConditionList>
+				<SkillConditionCoolTime CoolTimeName="Skill_01"/>
+			</SkillConditionList>
+			<SkillPropertyList>
+				<SkillProperty PropertyName="0"/>
+			</SkillPropertyList>
+			<SkillState ToolTip="1타 이후 카메라 쉐이크">
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="Skill_01" fCoolTime="10" fGlobalCoolTime="3" fFeverPoint="0"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="skill_01" bLoop="false" fDuration="0" fAniSpeed="1" SoundName="None"/>
+					<SkillTaskEventList>
+						<SkillTaskEventEnter>
+							<SkillTaskList>
+								<TaskCategoryEffect>
+									<TaskEffectCharacter EUnitSocket="Ground" EffectName="SHEffectDarkEnergyGround" fDuration="5" fOffsetX="0" fOffsetY="0" fOffsetZ="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Me"/>
+										</TaskFactorTargetList>
+									</TaskEffectCharacter>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventEnter>
+						<SkillTaskEventAnimation EAnimEventType="damage">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage EDamageType="AttackSkill" EUnitSocket="Body" PropertyID="0" fDamageRate="0" SoundName="None">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+								<TaskCategoryBuff>
+									<TaskBuffUse hBuffID="6001" fDuration="10" PropertyName="0">
+										<TaskFactorTargetList>
+											<TaskFactorTargetDefault ERelationType="Relation_Target"/>
+										</TaskFactorTargetList>
+									</TaskBuffUse>
+								</TaskCategoryBuff>
+								<TaskCategoryEffect>
+									<TaskEffectStage EStageEffectType="CameraShake" iArg="60" fArg="0.5" fDuration="1"/>
+								</TaskCategoryEffect>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+	</SkillEnemy>
+</RootSkillData>

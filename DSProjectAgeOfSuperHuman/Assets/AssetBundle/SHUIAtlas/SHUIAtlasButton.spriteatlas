@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SHUIAtlasButton
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: cf2ce58fe059c4b42be06263d50c25e1, type: 3}
+    totalSpriteSurfaceArea: 101685
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 50e351107d011e64695a4c065ef500cd, type: 3}
+  - {fileID: 21300000, guid: 258b0682e5e2f2a41939aed65a0eab83, type: 3}
+  - {fileID: 21300000, guid: 2b81781455f0ad346ad0ba3e4b743146, type: 3}
+  - {fileID: 21300000, guid: 7f06ee5461eaf3a4f9e19ee45c86ac6c, type: 3}
+  - {fileID: 21300000, guid: 963e70d4695f60d4e9b544921efad121, type: 3}
+  - {fileID: 21300000, guid: 7cbd59771b9e11f40a37567292511bb9, type: 3}
+  - {fileID: 21300000, guid: 7f85d06a40e8b1845984dfc359d46bd5, type: 3}
+  - {fileID: 21300000, guid: 3036b66aaa967a7479f4322a331913fc, type: 3}
+  - {fileID: 21300000, guid: cd29f19dd46e9d24eacba01872a83800, type: 3}
+  - {fileID: 21300000, guid: f66594bd4a653c648be01f712178eef0, type: 3}
+  - {fileID: 21300000, guid: c6a0cf8ef425ec44a8099018b621cf18, type: 3}
+  - {fileID: 21300000, guid: 26795f5f6fd9e2b4cbcbb1679d40b18c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UIImgButtonOkYellow
+  - UIImgButtonMenu
+  - UIImgBossChallenge
+  - UIImgButtonGift
+  - UIImgButtonPlus
+  - UIImgButtonCancel
+  - UIImgButtonStart
+  - UIImgButtonPost
+  - UIImgIconCancel
+  - UIImgButtonNo
+  - UIImgButtonYes
+  - UIImgButtonGold
+  m_RenderDataMap: {}
+  m_Tag: SHUIAtlasButton
+  m_IsVariant: 0

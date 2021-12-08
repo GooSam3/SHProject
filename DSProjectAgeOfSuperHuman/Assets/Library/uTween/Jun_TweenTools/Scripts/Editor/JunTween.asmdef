@@ -1,0 +1,18 @@
+{
+    "name": "JunTween",
+    "rootNamespace": "",
+    "references": [
+        "GUID:36c45487fbc1e2943bbbc035470034d5"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
