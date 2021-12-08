@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (x64) (http://www.altova.com) by MESMERiZE (MSM) -->
+<RootSkillData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../ScriptData/DKSheetSkill.xsd">
+	<SkillCommon ToolTip="기본스킬정의">
+		<SkillActive hSkillID="2" ToolTip="기본근거리공격" ETargetingType="SingleEnemy" fSkillRange="1" fSkillRadius="0" fSkillAngle="0">
+			<SkillConditionList>
+				<SkillConditionCC bStun="false" bSleep="false" bKnockBack="false" bSilence="false"/>
+				<SkillConditionCoolTime CoolTimeName="NormalAttack" GlobalCoolTime="Global"/>
+			</SkillConditionList>
+			<SkillState ToolTip="기본공격스킬">
+				<SkillStateMoveWalk fStopRange="0">
+					<SkillResourceList>
+						<SkillResourceNone/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="Anim_Walk" bLoop="true" fDuration="0"/>
+				</SkillStateMoveWalk>
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="NormalAttack" fCoolTime="3"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="Anim_Attack" bLoop="false" fDuration="0"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="AnimEvent_Attack" iIndex="0">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage bDamageOrHeal="true" fPower="1" EDamageType="Physical" fAggro="1">
+										<TaskTarget>
+											<TaskTargetDefault ERelationType="Relation_Target"/>
+										</TaskTarget>
+										<TaskConditionList>
+											<TaskConditionNone/>
+										</TaskConditionList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+		<SkillActive hSkillID="1" ToolTip="기본이동" ETargetingType="Location" fSkillRange="0" fSkillRadius="0" fSkillAngle="0">
+			<SkillConditionList>
+				<SkillConditionCC bStun="false" bSleep="false" bKnockBack="false" bSilence="false"/>
+			</SkillConditionList>
+			<SkillState ToolTip="기본이동상태">
+				<SkillStateMoveWalk fStopRange="0">
+					<SkillResourceList>
+						<SkillResourceNone/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="Anim_Walk" bLoop="true" fDuration="0"/>
+				</SkillStateMoveWalk>
+			</SkillState>
+		</SkillActive>
+	</SkillCommon>
+	<SkillHero ToolTip="테스트 케릭터스킬1">
+		<SkillActive hSkillID="1000" ToolTip="영웅의일격" ETargetingType="SingleEnemy" fSkillRange="1" fSkillRadius="0" fSkillAngle="0">
+			<SkillConditionList>
+				<SkillConditionCC bStun="false" bSleep="false" bKnockBack="false" bSilence="false"/>
+				<SkillConditionCoolTime CoolTimeName="HeroStrike" GlobalCoolTime="Global"/>
+			</SkillConditionList>
+			<SkillState ToolTip="적 한 개체에게 공격력 300% 타격을 입힌다.">
+				<SkillStateMoveWalk fStopRange="0">
+					<SkillResourceList>
+						<SkillResourceNone/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="Anim_Walk" bLoop="true" fDuration="0"/>
+				</SkillStateMoveWalk>
+				<SkillStateAnimation>
+					<SkillResourceList>
+						<SkillResourceCoolTime CoolTimeName="HeroStrike" fCoolTime="6"/>
+					</SkillResourceList>
+					<SkillAnimation EAnimationType="Anim_Attack" bLoop="false" fDuration="0"/>
+					<SkillTaskEventList>
+						<SkillTaskEventAnimation EAnimEventType="AnimEvent_Attack" iIndex="0">
+							<SkillTaskList>
+								<TaskCategoryDamage>
+									<TaskSkillDamage bDamageOrHeal="true" fPower="3" EDamageType="Physical" fAggro="3">
+										<TaskTarget>
+											<TaskTargetDefault ERelationType="Relation_Target"/>
+										</TaskTarget>
+										<TaskConditionList>
+											<TaskConditionNone/>
+										</TaskConditionList>
+									</TaskSkillDamage>
+								</TaskCategoryDamage>
+							</SkillTaskList>
+						</SkillTaskEventAnimation>
+					</SkillTaskEventList>
+				</SkillStateAnimation>
+			</SkillState>
+		</SkillActive>
+	</SkillHero>
+</RootSkillData>

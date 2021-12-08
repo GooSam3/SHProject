@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - UIOver
+  - UIUnder
+  - SpriteUnder
+  - Sprite
+  - SpriteOver
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: SpriteUnder
+    uniqueID: 854493509
+    locked: 0
+  - name: Sprite
+    uniqueID: 638173383
+    locked: 0
+  - name: SpriteOver
+    uniqueID: 1953037721
+    locked: 0
+  - name: UIUnder
+    uniqueID: 3090395575
+    locked: 0
+  - name: UI
+    uniqueID: 1402667255
+    locked: 0
+  - name: UIOver
+    uniqueID: 2709696205
+    locked: 0

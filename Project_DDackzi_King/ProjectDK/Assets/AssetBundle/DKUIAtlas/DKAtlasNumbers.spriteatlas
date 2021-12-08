@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DKAtlasNumbers
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 7adfd9cb76d46854a9c23677b0e0232e, type: 3}
+    totalSpriteSurfaceArea: 24000
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b95df420912f07f479bc07da1bc1b121, type: 3}
+  - {fileID: 21300000, guid: 64af12a11d56e234dbc7a932a03e6a08, type: 3}
+  - {fileID: 21300000, guid: 063f9ba1488b0a547841664700d16d41, type: 3}
+  - {fileID: 21300000, guid: 786713f2a320c2d40847f675765a530a, type: 3}
+  - {fileID: 21300000, guid: 495915f27b759e9419fbee0f66279b57, type: 3}
+  - {fileID: 21300000, guid: ee2c3923159bbe04281e3e731dcdb8a3, type: 3}
+  - {fileID: 21300000, guid: 21dfc1b32b89c9b4899ead76a18657b7, type: 3}
+  - {fileID: 21300000, guid: 5aa07a748e8adc74799260ca51d40922, type: 3}
+  - {fileID: 21300000, guid: b8742084f2a1fda43881644ddd6d782a, type: 3}
+  - {fileID: 21300000, guid: 62595ab5ce8ed904fbb60a76efac1344, type: 3}
+  - {fileID: 21300000, guid: c8f82ee5356baa14293ad8439d99de00, type: 3}
+  - {fileID: 21300000, guid: 7afd174697ad7b044b4f4cd0ddb62182, type: 3}
+  - {fileID: 21300000, guid: 88e2be56a18ed6c4f91c1fc19ad0c385, type: 3}
+  - {fileID: 21300000, guid: b68bf1f64128ecf4fa4d095149dd811a, type: 3}
+  - {fileID: 21300000, guid: cfd5f747bddd38c4492dd052eb07907e, type: 3}
+  - {fileID: 21300000, guid: 652f4d78a307cb6489beafe6050ba5bb, type: 3}
+  - {fileID: 21300000, guid: ad78f55977ef89a41badb7b7debb79b2, type: 3}
+  - {fileID: 21300000, guid: e31c0a0aa81cc6240a20068029e9f0fb, type: 3}
+  - {fileID: 21300000, guid: 7c5b2eaa86f1bd443a150636a8dcc56d, type: 3}
+  - {fileID: 21300000, guid: 7caad6bafb2f08d4bb03068a63be7063, type: 3}
+  - {fileID: 21300000, guid: 97dcedfaee82101469c417ff6e90dd3f, type: 3}
+  - {fileID: 21300000, guid: fb537c3b706591645bd9bd91555dab0f, type: 3}
+  - {fileID: 21300000, guid: bfb8fa6bd35b9904883c1390361443b5, type: 3}
+  - {fileID: 21300000, guid: 4f4739dca4806a74bb4728c8fc362496, type: 3}
+  - {fileID: 21300000, guid: 577d9c4d2d1265f49b1e231c491bbd50, type: 3}
+  - {fileID: 21300000, guid: bfa21f8dc2b0d434d8381c5ac03a2689, type: 3}
+  - {fileID: 21300000, guid: 59bf83fdf19e49a4cbd14555db1d8aae, type: 3}
+  - {fileID: 21300000, guid: cfa0a26e495239e4aaf4f9d318d00944, type: 3}
+  - {fileID: 21300000, guid: 5d45327ea263dbe4c816f2dc4ff8f97e, type: 3}
+  - {fileID: 21300000, guid: ed59f17f6c38e6846b7d85ef73a47656, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - DKSprit_Number_Critical_8
+  - DKSprit_Number_Normal_5
+  - DKSprit_Number_Normal_6
+  - DKSprit_Number_Heal_7
+  - DKSprit_Number_Heal_8
+  - DKSprit_Number_Critical_7
+  - DKSprit_Number_Heal_4
+  - DKSprit_Number_Critical_4
+  - DKSprit_Number_Critical_0
+  - DKSprit_Number_Normal_4
+  - DKSprit_Number_Critical_1
+  - DKSprit_Number_Heal_6
+  - DKSprit_Number_Normal_0
+  - DKSprit_Number_Heal_5
+  - DKSprit_Number_Normal_8
+  - DKSprit_Number_Normal_1
+  - DKSprit_Number_Critical_3
+  - DKSprit_Number_Heal_3
+  - DKSprit_Number_Critical_2
+  - DKSprit_Number_Heal_1
+  - DKSprit_Number_Heal_2
+  - DKSprit_Number_Critical_6
+  - DKSprit_Number_Critical_5
+  - DKSprit_Number_Normal_2
+  - DKSprit_Number_Normal_7
+  - DKSprit_Number_Normal_9
+  - DKSprit_Number_Critical_9
+  - DKSprit_Number_Heal_9
+  - DKSprit_Number_Heal_0
+  - DKSprit_Number_Normal_3
+  m_RenderDataMap: {}
+  m_Tag: DKAtlasNumbers
+  m_IsVariant: 0

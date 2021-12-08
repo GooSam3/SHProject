@@ -1,0 +1,16 @@
+{
+    "name": "DKContents",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1f12e612e993e054db41609d1a717609"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

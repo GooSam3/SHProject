@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (x64) (http://www.altova.com) by MESMERiZE (MSM) -->
+<RootBuffData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../ScriptData/DKSheetBuff.xsd">
+	<BuffHero ToolTip="힐 관련 버프">
+		<BuffData hBuffID="1001" ToolTip="도트힐" fEventOverTime="0.5" bExclusive="false" bCountUp="false" bTimeReset="true" bPowerUp="true">
+			<BuffEventOverTime>
+				<BuffTaskCategoryList>
+					<BuffTaskCategoryDamageHeal>
+						<BuffTaskDamage bDamage="true" EDamageType="Physical" EBuffTaskTarget="BuffOwner" fPowerRate="1"/>
+					</BuffTaskCategoryDamageHeal>
+				</BuffTaskCategoryList>
+			</BuffEventOverTime>
+		</BuffData>
+	</BuffHero>
+</RootBuffData>

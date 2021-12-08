@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (x64) (http://www.altova.com) by MESMERiZE (MSM) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.0">
+	<xs:element name="RootSkillData">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="SkillCommon">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element ref="SkillActive"/>
+						</xs:choice>
+						<xs:attribute ref="ToolTip" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillHero">
+					<xs:complexType>
+						<xs:choice minOccurs="0">
+							<xs:element ref="SkillActive"/>
+							<xs:element ref="SkillPassive"/>
+							<xs:element ref="SkillAutoCasting"/>
+						</xs:choice>
+						<xs:attribute ref="ToolTip" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillEnemy">
+					<xs:complexType>
+						<xs:choice minOccurs="0">
+							<xs:element ref="SkillActive"/>
+							<xs:element ref="SkillPassive"/>
+							<xs:element ref="SkillAutoCasting"/>
+						</xs:choice>
+						<xs:attribute ref="ToolTip" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SkillActive">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:sequence>
+					<xs:element name="SkillConditionList">
+						<xs:complexType>
+							<xs:choice>
+								<xs:sequence>
+									<xs:element name="SkillConditionNone"/>
+								</xs:sequence>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:element name="SkillConditionCC">
+										<xs:complexType>
+											<xs:attribute name="bStun" type="xs:boolean" use="required"/>
+											<xs:attribute name="bSleep" type="xs:boolean" use="required"/>
+											<xs:attribute name="bKnockBack" type="xs:boolean" use="required"/>
+											<xs:attribute name="bSilence" type="xs:boolean" use="required"/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="SkillConditionCoolTime">
+										<xs:complexType>
+											<xs:attribute name="CoolTimeName" type="xs:string" use="required"/>
+											<xs:attribute name="GlobalCoolTime" type="xs:string" use="required"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:choice>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element ref="SkillState"/>
+				</xs:sequence>
+			</xs:sequence>
+			<xs:attribute name="hSkillID" use="required"/>
+			<xs:attribute ref="ToolTip" use="required"/>
+			<xs:attribute ref="ETargetingType" use="required"/>
+			<xs:attribute name="fSkillRange" type="xs:float" use="required"/>
+			<xs:attribute name="fSkillRadius" type="xs:float" use="required"/>
+			<xs:attribute name="fSkillAngle" type="xs:float" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SkillAutoCasting">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="TaskBuffUse">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="TaskTarget"/>
+						</xs:sequence>
+						<xs:attribute name="hBuffID" type="xs:float" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="hSkillID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SkillPassive">
+		<xs:complexType>
+			<xs:attribute name="hSkillID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SkillState">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="SkillStateAnimation">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:sequence>
+								<xs:element ref="SkillResourceList"/>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element name="SkillAnimation">
+									<xs:complexType>
+										<xs:attribute ref="EAnimationType" use="required"/>
+										<xs:attribute name="bLoop" type="xs:boolean" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+										<xs:attribute name="fAniSpeed" type="xs:float" use="optional"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element ref="SkillTaskEventList"/>
+							</xs:sequence>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillStateCrowdControl">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:sequence>
+								<xs:element ref="SkillResourceList"/>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element name="SkillAnimation">
+									<xs:complexType>
+										<xs:attribute ref="EAnimationType" use="required"/>
+										<xs:attribute name="bLoop" type="xs:boolean" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:choice minOccurs="0">
+								<xs:element ref="SkillTaskEventList"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillStateIdle">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:sequence>
+								<xs:element ref="SkillResourceList"/>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element name="SkillAnimation">
+									<xs:complexType>
+										<xs:attribute ref="EAnimationType" use="required"/>
+										<xs:attribute name="bLoop" type="xs:boolean" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:choice minOccurs="0">
+								<xs:element ref="SkillTaskEventList"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillStateInstant">
+					<xs:complexType>
+						<xs:choice minOccurs="0">
+							<xs:element ref="SkillTaskEventList"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillStateMoveDash">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:sequence>
+								<xs:element ref="SkillResourceList"/>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element name="SkillAnimation">
+									<xs:complexType>
+										<xs:attribute ref="EAnimationType" use="required"/>
+										<xs:attribute name="bLoop" type="xs:boolean" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:choice minOccurs="0">
+								<xs:element ref="SkillTaskEventList"/>
+							</xs:choice>
+						</xs:sequence>
+						<xs:attribute name="fStopRange" type="xs:float" use="required"/>
+						<xs:attribute name="SpeedCurveName" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillStateMoveWarp">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:sequence>
+								<xs:element ref="SkillResourceList"/>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element name="SkillAnimation">
+									<xs:complexType>
+										<xs:attribute ref="EAnimationType" use="required"/>
+										<xs:attribute name="bLoop" type="xs:boolean" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:choice minOccurs="0">
+								<xs:element ref="SkillTaskEventList"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SkillStateMoveWalk">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:sequence>
+								<xs:element ref="SkillResourceList"/>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element name="SkillAnimation">
+									<xs:complexType>
+										<xs:attribute ref="EAnimationType" use="required"/>
+										<xs:attribute name="bLoop" type="xs:boolean" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:choice minOccurs="0">
+								<xs:element ref="SkillTaskEventList"/>
+							</xs:choice>
+						</xs:sequence>
+						<xs:attribute name="fStopRange" type="xs:float" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute ref="ToolTip" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SkillTaskEventList">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:element name="SkillTaskEventEnter">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="SkillTaskList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="SkillTaskEventExit">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="SkillTaskList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="SkillTaskEventAnimation">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="SkillTaskList"/>
+							</xs:sequence>
+							<xs:attribute ref="EAnimEventType" use="required"/>
+							<xs:attribute name="iIndex" type="xs:unsignedInt" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="SkillTaskEventAutoCast">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="SkillTaskList"/>
+							</xs:sequence>
+							<xs:attribute name="bAutoCastOn" type="xs:boolean" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="SkillTaskEventCustom">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="SkillTaskList"/>
+							</xs:sequence>
+							<xs:attribute ref="ETaskEventType" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SkillTaskList">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:element name="TaskCategoryAnim">
+						<xs:complexType>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="TaskAnimEffect">
+									<xs:complexType>
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:choice>
+												<xs:element ref="TaskConditionList"/>
+											</xs:choice>
+										</xs:choice>
+										<xs:attribute ref="EUnitSocket" use="required"/>
+										<xs:attribute name="PrefabName" type="xs:string" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="TaskAnimPlay">
+									<xs:complexType>
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:choice>
+												<xs:element ref="TaskConditionList"/>
+											</xs:choice>
+										</xs:choice>
+										<xs:attribute ref="EAnimationType" use="required"/>
+										<xs:attribute name="bLoop" type="xs:boolean" use="required"/>
+										<xs:attribute name="fDuration" type="xs:float" use="required"/>
+										<xs:attribute name="fAniSpeed" type="xs:float" use="optional"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="TaskCategoryBuff">
+						<xs:complexType>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element ref="TaskBuffUse"/>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="TaskCategorySkill">
+						<xs:complexType>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="TaskSkillUse">
+									<xs:complexType>
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:choice>
+												<xs:element ref="TaskTarget"/>
+											</xs:choice>
+											<xs:choice>
+												<xs:element ref="TaskEvent"/>
+											</xs:choice>
+											<xs:choice>
+												<xs:element ref="TaskConditionList"/>
+											</xs:choice>
+										</xs:choice>
+										<xs:attribute name="hSkillID" type="xs:float" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="TaskCategoryDamage">
+						<xs:complexType>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="TaskSkillDamage">
+									<xs:complexType>
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:choice>
+												<xs:element ref="TaskTarget"/>
+											</xs:choice>
+											<xs:choice>
+												<xs:element ref="TaskEvent"/>
+											</xs:choice>
+											<xs:choice maxOccurs="unbounded">
+												<xs:element name="TaskBonusStat">
+													<xs:complexType>
+														<xs:attribute ref="EBonusStatType" use="required"/>
+														<xs:attribute name="fValue" type="xs:float" use="required"/>
+													</xs:complexType>
+												</xs:element>
+											</xs:choice>
+											<xs:choice>
+												<xs:element ref="TaskConditionList"/>
+											</xs:choice>
+										</xs:choice>
+										<xs:attribute name="bDamageOrHeal" type="xs:boolean" use="required"/>
+										<xs:attribute name="fPower" type="xs:float" use="required"/>
+										<xs:attribute name="fAggro" type="xs:float" use="required"/>
+										<xs:attribute ref="EDamageType" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="TaskCategorySpawn">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:element name="TaskSpawnEffect">
+										<xs:complexType>
+											<xs:choice minOccurs="0" maxOccurs="unbounded">
+												<xs:choice>
+													<xs:element ref="TaskConditionList"/>
+												</xs:choice>
+											</xs:choice>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="TaskSpawnMinion">
+										<xs:complexType>
+											<xs:choice minOccurs="0" maxOccurs="unbounded">
+												<xs:choice>
+													<xs:element ref="TaskConditionList"/>
+												</xs:choice>
+											</xs:choice>
+										</xs:complexType>
+									</xs:element>
+								</xs:choice>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="TaskCategoryProjectile">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:element name="TaskProjectileMissile">
+										<xs:complexType>
+											<xs:choice minOccurs="0" maxOccurs="unbounded">
+												<xs:choice>
+													<xs:element ref="TaskConditionList"/>
+												</xs:choice>
+											</xs:choice>
+											<xs:attribute name="ProjectileName" type="xs:string" use="required"/>
+											<xs:attribute name="fDirectionOffset" type="xs:float" use="required"/>
+											<xs:attribute name="fSpeed" type="xs:float" use="required"/>
+											<xs:attribute name="fPower" type="xs:float" use="required"/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="TaskProjectileDirection">
+										<xs:complexType>
+											<xs:choice minOccurs="0" maxOccurs="unbounded">
+												<xs:choice>
+													<xs:element ref="TaskConditionList"/>
+												</xs:choice>
+											</xs:choice>
+											<xs:attribute name="ProjectileName" type="xs:string" use="required"/>
+											<xs:attribute name="fDirectionOffset" type="xs:float" use="required"/>
+											<xs:attribute name="fSpeed" type="xs:float" use="required"/>
+											<xs:attribute name="fPower" type="xs:float" use="required"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:choice>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TaskTarget">
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element name="TaskTargetRange">
+					<xs:complexType>
+						<xs:attribute name="bNearbyMe" type="xs:boolean" use="required"/>
+						<xs:attribute name="fRange" type="xs:boolean" use="required"/>
+						<xs:attribute name="iTargetCount" type="xs:unsignedInt" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TaskTargetHP">
+					<xs:complexType>
+						<xs:attribute ref="ERelationType" use="required"/>
+						<xs:attribute name="bHPLess" type="xs:boolean" use="required"/>
+						<xs:attribute name="iTargetCount" type="xs:unsignedInt" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TaskTargetRandom">
+					<xs:complexType>
+						<xs:attribute ref="ERelationType" use="required"/>
+						<xs:attribute name="iTargetCount" type="xs:unsignedInt" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TaskTargetDefault">
+					<xs:complexType>
+						<xs:attribute ref="ERelationType" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TaskBuffUse">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:choice>
+					<xs:element ref="TaskTarget"/>
+				</xs:choice>
+				<xs:choice>
+					<xs:element ref="TaskEvent"/>
+				</xs:choice>
+				<xs:choice>
+					<xs:element ref="TaskConditionList"/>
+				</xs:choice>
+			</xs:choice>
+			<xs:attribute name="hBuffID" type="xs:float" use="required"/>
+			<xs:attribute name="fDuration" type="xs:boolean" use="required"/>
+			<xs:attribute name="fPower" type="xs:boolean" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TaskConditionList">
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element name="TaskConditionNone"/>
+				<xs:element name="TaskConditionRandom">
+					<xs:complexType>
+						<xs:attribute name="iChance" type="xs:unsignedInt" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TaskConditionLessHP">
+					<xs:complexType>
+						<xs:attribute name="fHPRate" type="xs:float" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SkillResourceList">
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element name="SkillResourceNone"/>
+				</xs:sequence>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="SkillResourceCoolTime">
+						<xs:complexType>
+							<xs:attribute name="CoolTimeName" type="xs:string" use="required"/>
+							<xs:attribute name="fCoolTime" type="xs:float" use="required"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="SkillResourceBuff">
+						<xs:complexType>
+							<xs:attribute name="hBuffID" use="required"/>
+							<xs:attribute name="iConsumeCount" use="required"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="SkillResourceHP">
+						<xs:complexType>
+							<xs:attribute name="iConsumeHP" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TaskEvent">
+		<xs:complexType>
+			<xs:attribute ref="ETaskEventType" use="required"/>
+			<xs:attribute name="iArg" type="xs:integer"/>
+			<xs:attribute name="fArg" type="xs:float"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="ETargetingType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Location"/>
+				<xs:enumeration value="Directional"/>
+				<xs:enumeration value="DirectionalLocation"/>
+				<xs:enumeration value="SingleEnemy"/>
+				<xs:enumeration value="SingleFriend"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="ERelationType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Relation_Me"/>
+				<xs:enumeration value="Relation_Target"/>
+				<xs:enumeration value="Relation_FriendAll"/>
+				<xs:enumeration value="Relation_EnemyAll"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EAnimationType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Anim_Idle"/>
+				<xs:enumeration value="Anim_Walk"/>
+				<xs:enumeration value="Anim_Dash"/>
+				<xs:enumeration value="Anim_Attack"/>
+				<xs:enumeration value="Anim_SkillNormal"/>
+				<xs:enumeration value="Anim_SkillSpecial"/>
+				<xs:enumeration value="Anim_Die"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EAnimEventType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="AnimEvent_Attack"/>
+				<xs:enumeration value="AnimEvent_Skill"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EUnitSocket">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="HBBar"/>
+				<xs:enumeration value="Ground"/>
+				<xs:enumeration value="HitPoint"/>
+				<xs:enumeration value="AttackPoint"/>
+				<xs:enumeration value="AttackPoint2"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EBonusStatType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value=""/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EDamageType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Physical"/>
+				<xs:enumeration value="Magical"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="ETaskEventType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="TaskEventCustom_DamagaMain"/>
+				<xs:enumeration value="TaskEventCustom_DamagaAdd1"/>
+				<xs:enumeration value="TaskEventCustom_DamagaAdd2"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="ToolTip" type="xs:string"/>
+</xs:schema>

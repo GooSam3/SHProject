@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4457b6e6d3304bd46a31be63dad3325c, type: 3}
+  m_Name: AddressableImportSettings
+  m_EditorClassIdentifier: 
+  allowGroupCreation: 1
+  rules:
+  - path: Assets/AssetBundle/DKUIPrefab/*.*
+    matchType: 0
+    groupName: BundleUIPrefab
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: bdf9b2ce39de78d468b78635229b5478, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/DKScene/*.unity
+    matchType: 0
+    groupName: BundleScene
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: bdf9b2ce39de78d468b78635229b5478, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/DKUIScene/*.unity
+    matchType: 0
+    groupName: BundleUIScene
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: bdf9b2ce39de78d468b78635229b5478, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/DKScriptData/*.*
+    matchType: 0
+    groupName: BundleScriptData
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: bdf9b2ce39de78d468b78635229b5478, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 
+  - path: Assets/AssetBundle/DKCharacter/*.*
+    matchType: 0
+    groupName: BundleCharacter
+    LabelMode: 0
+    labelRefs: []
+    groupTemplate: {fileID: 11400000, guid: bdf9b2ce39de78d468b78635229b5478, type: 2}
+    groupTemplateApplicationMode: 0
+    simplified: 1
+    addressReplacement: 

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (x64) (http://www.altova.com) by MESMERiZE (MSM) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="RootBuffData">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="BuffHero">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element ref="BuffData"/>
+						</xs:choice>
+						<xs:attribute ref="ToolTip" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BuffEnemy">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element ref="BuffData"/>
+						</xs:choice>
+						<xs:attribute ref="ToolTip" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BuffData">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:element name="BuffEventStart">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventEnd">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventOverTime">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventDamageTo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventDamageFrom">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventHealTo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventHealFrom">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventCCTo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+							<xs:attribute name="bStun" type="xs:boolean" use="required"/>
+							<xs:attribute name="bSleep" type="xs:boolean" use="required"/>
+							<xs:attribute name="bKnockBack" type="xs:boolean" use="required"/>
+							<xs:attribute name="bSilence" type="xs:boolean" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="BuffEventCCFrom">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="BuffTaskCategoryList"/>
+							</xs:sequence>
+							<xs:attribute name="bStun" type="xs:boolean" use="required"/>
+							<xs:attribute name="bSleep" type="xs:boolean" use="required"/>
+							<xs:attribute name="bKnockBack" type="xs:boolean" use="required"/>
+							<xs:attribute name="bSilence" type="xs:boolean" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="hBuffID" type="xs:unsignedInt" use="required"/>
+			<xs:attribute ref="ToolTip" use="required"/>
+			<xs:attribute name="iStackCount" type="xs:integer" use="required"/>
+			<xs:attribute name="fEventOverTime" type="xs:float" use="required"/>
+			<xs:attribute name="bExclusive" type="xs:boolean" use="required"/>
+			<xs:attribute name="bCountUp" type="xs:boolean" use="required"/>
+			<xs:attribute name="bTimeReset" type="xs:boolean" use="required"/>
+			<xs:attribute name="bPowerUp" type="xs:boolean" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BuffTaskCategoryList">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="BuffTaskCategoryDamageHeal">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="BuffTaskDamage">
+								<xs:complexType>
+									<xs:attribute name="bDamage" type="xs:boolean" use="required"/>
+									<xs:attribute ref="EDamageType" use="required"/>
+									<xs:attribute ref="EBuffTaskTarget" use="required"/>
+									<xs:attribute name="fPowerRate" type="xs:float" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="BuffTaskDamageRange">
+								<xs:complexType>
+									<xs:attribute name="bDamage" type="xs:boolean" use="required"/>
+									<xs:attribute ref="EDamageType" use="required"/>
+									<xs:attribute ref="EBuffTaskTarget" use="required"/>
+									<xs:attribute name="fPowerRate" type="xs:float" use="required"/>
+									<xs:attribute name="fRange" type="xs:float" use="required"/>
+									<xs:attribute name="iTargetCount" type="xs:unsignedInt" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BuffTaskCategoryCC">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="BuffTaskStun"/>
+							<xs:element name="BuffTaskSilence"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BuffTaskCategoryStat">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="BuffTaskStatConst">
+								<xs:complexType>
+									<xs:attribute ref="EDKStatType" use="required"/>
+									<xs:attribute name="fConstValue" type="xs:float" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="BuffTaskStatPercent">
+								<xs:complexType>
+									<xs:attribute ref="EDKStatType" use="required"/>
+									<xs:attribute name="fRateValue" type="xs:float" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="EDamageType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Physical"/>
+				<xs:enumeration value="Magical"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EDKStatType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Strength"/>
+				<xs:enumeration value="Agility"/>
+				<xs:enumeration value="Stamina"/>
+				<xs:enumeration value="Intelligence"/>
+				<xs:enumeration value="Dexterity"/>
+				<xs:enumeration value="Luck"/>
+				<xs:enumeration value="Attack"/>
+				<xs:enumeration value="Defence"/>
+				<xs:enumeration value="Accuracy"/>
+				<xs:enumeration value="Evade"/>
+				<xs:enumeration value="Critical"/>
+				<xs:enumeration value="AntiCritical"/>
+				<xs:enumeration value="Multiplier"/>
+				<xs:enumeration value="Antimultiplier"/>
+				<xs:enumeration value="EnergyRecover"/>
+				<xs:enumeration value="HealthRecover"/>
+				<xs:enumeration value="HealthConversion"/>
+				<xs:enumeration value="MaxHealthPoint"/>
+				<xs:enumeration value="AttackPower"/>
+				<xs:enumeration value="DefenceRate"/>
+				<xs:enumeration value="EvasionRate"/>
+				<xs:enumeration value="AccuracyRate"/>
+				<xs:enumeration value="CriticalRate"/>
+				<xs:enumeration value="AnitiCriticalRate"/>
+				<xs:enumeration value="MultiplierRate"/>
+				<xs:enumeration value="AntiMultiplierRate"/>
+				<xs:enumeration value="MoveSpeed"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EBuffTaskTarget">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="BuffOwner"/>
+				<xs:enumeration value="BuffOrigin"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="EBuffUIType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="BuffShow"/>
+				<xs:enumeration value="BuffGlobalShow"/>
+				<xs:enumeration value="BuffHide"/>
+				<xs:enumeration value="DebuffShow"/>
+				<xs:enumeration value="DebuffGlobalShow"/>
+				<xs:enumeration value="DebuffHide"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="ToolTip" type="xs:string"/>
+</xs:schema>
